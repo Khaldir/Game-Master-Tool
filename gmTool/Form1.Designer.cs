@@ -56,12 +56,11 @@
             // 
             // openCampaignButton
             // 
-            this.openCampaignButton.Enabled = false;
             this.openCampaignButton.Location = new System.Drawing.Point(12, 244);
             this.openCampaignButton.Name = "openCampaignButton";
             this.openCampaignButton.Size = new System.Drawing.Size(329, 23);
             this.openCampaignButton.TabIndex = 0;
-            this.openCampaignButton.Text = "Open Campaign";
+            this.openCampaignButton.Text = "New Campaign";
             this.openCampaignButton.UseVisualStyleBackColor = true;
             this.openCampaignButton.Click += new System.EventHandler(this.openCampaignButton_Click);
             // 
@@ -91,11 +90,13 @@
             // 
             // Form1
             // 
+            this.AcceptButton = this.openCampaignButton;
             this.ClientSize = new System.Drawing.Size(353, 275);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.openCampaignButton);
             this.Controls.Add(this.filePathDisplay);
             this.Controls.Add(this.browseButton);
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Select Campaign";
             this.groupBox1.ResumeLayout(false);

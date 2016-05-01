@@ -18,6 +18,8 @@ namespace gmTool
             InitializeComponent();
         }
 
+        private string fileName;
+
         private void button2_Click(object sender, EventArgs e)
         {
             openFileDialog1.ShowDialog();
@@ -30,19 +32,30 @@ namespace gmTool
 
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
-            groupBox1.Text = openFileDialog1.SafeFileName.Substring(0, openFileDialog1.SafeFileName.Length - 4);
+            fileName = openFileDialog1.SafeFileName.Substring(0, openFileDialog1.SafeFileName.Length - 4);
+            groupBox1.Text = fileName;
             using (StreamReader sr = new StreamReader(openFileDialog1.FileName))
             {
                 // Read the stream to a string, and write the string to the console.
                 string line = sr.ReadToEnd();
                 textBox1.Text = line;
             }
-            openCampaignButton.Enabled = true;
+            openCampaignButton.Text = "Open Campaign";
         }
 
         private void openCampaignButton_Click(object sender, EventArgs e)
         {
-            //Open main form, pass filepath
+            MainForm gmTool;
+            if (openFileDialog1.CheckFileExists)
+            {
+                gmTool = new MainForm(openFileDialog1.FileName, fileName); 
+            }
+            else
+            {
+                gmTool = new MainForm();
+            }
+            gmTool.Show();
+            //Close();
         }
     }
 }
