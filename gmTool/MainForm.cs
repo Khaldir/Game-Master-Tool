@@ -15,17 +15,24 @@ namespace gmTool
     {
         public string filePath;
 
-        public MainForm(string fPath, string fName)
+        private void sharedInit()
         {
             InitializeComponent();
+            PopulateTreeView();
+            WMPLib.WindowsMediaPlayer audioPlayer = new WMPLib.WindowsMediaPlayer();
+        }
+    
+
+        public MainForm(string fPath, string fName)
+        {
+            sharedInit();
             filePath = fPath;
             Text = fName;
-            PopulateTreeView();
         }
 
         public MainForm()
         {
-            InitializeComponent();
+            sharedInit();
             filePath = null;
             Text = "New Campaign";
         }
@@ -60,6 +67,11 @@ namespace gmTool
                 }
                 nodeToAddTo.Nodes.Add(aNode);
             }
+        }
+
+        private void pausePlayToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
