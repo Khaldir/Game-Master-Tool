@@ -105,16 +105,7 @@ namespace gmTool
         {
             ToolStripItem clickedButton = (ToolStripItem)sender;
             int selectedMusicCount = Int32.Parse(clickedButton.OwnerItem.Name.Substring(0, 1));
-            if (audioArray[selectedMusicCount].playState == WMPLib.WMPPlayState.wmppsPlaying)
-            {
-                pauseTime[selectedMusicCount] = audioArray[selectedMusicCount].controls.currentPosition;
-                audioArray[selectedMusicCount].controls.pause();
-            }
-            else if (audioArray[selectedMusicCount].playState == WMPLib.WMPPlayState.wmppsPaused)
-            {
-                audioArray[selectedMusicCount].controls.currentPosition = pauseTime[selectedMusicCount];
-                audioArray[selectedMusicCount].controls.play();
-            }
+            pause(selectedMusicCount);
         }
 
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
@@ -136,6 +127,17 @@ namespace gmTool
                     audioArray[musicCount].URL = selectedPath;
                     audioArray[musicCount].controls.play();
 
+                    GroupBox musicBox = musicBox1;
+                    switch (musicCount)
+                    {
+                        case 0: musicBox = musicBox1; break;
+                        case 1: musicBox = musicBox2; break;
+                        case 2: musicBox = musicBox3; break;
+                        case 3: musicBox = musicBox4; break;
+                        case 4: musicBox = musicBox5; break;
+                    }
+                    musicBox.Text = selectedItem.Name;
+
                     ToolStripMenuItem newitem = new ToolStripMenuItem("1 - " + selectedItem.Name);
                     newitem.Name = musicCount+ " - " + selectedItem.Name;
                     newitem.DropDownItems.Add("Play");
@@ -151,8 +153,62 @@ namespace gmTool
             }
         }
 
-        
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
 
+        private void pause(int index)
+        {
+            Button pauseButton = pausebutton1;
+            switch (index)
+            {
+                case 0:
+                    pauseButton = pausebutton1;
+                    break;
+                case 1:
+                    pauseButton = pausebutton2;
+                    break;
+                case 2:
+                    pauseButton = pausebutton3;
+                    break;
+                case 3:
+                    pauseButton = pausebutton4;
+                    break;
+                case 4:
+                    pauseButton = pausebutton5;
+                    break;
+            }
+
+            if (audioArray[index].playState == WMPLib.WMPPlayState.wmppsPlaying)
+            {
+                pauseTime[index] = audioArray[index].controls.currentPosition;
+                audioArray[index].controls.pause();
+                pauseButton.Text = "Play";
+            }
+            else if (audioArray[index].playState == WMPLib.WMPPlayState.wmppsPaused)
+            {
+                audioArray[index].controls.currentPosition = pauseTime[0];
+                audioArray[index].controls.play();
+                pauseButton.Text = "Pause";
+            }
+            
+        }
+
+        private void volumeChanged(object sender, EventArgs e)
+        {
+            audioArray[0].settings.volume = (int)volumeControl.Value;
+        }
+
+        private void pausebutton1_Click(object sender, EventArgs e)
+        {
+            pause(0);
+        }
+
+        private void stopbutton1_Click(object sender, EventArgs e)
+        {
+            audioArray[0].controls.stop();
+            audioArray[0] = new WMPLib.WindowsMediaPlayer();
+        }
     }
 }
