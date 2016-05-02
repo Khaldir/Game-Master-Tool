@@ -37,9 +37,6 @@
             this.saveCampaignToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadCampaignToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.musicToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nameOfSongToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pausePlayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.stopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,6 +50,7 @@
             this.treeView1.SelectedImageIndex = 0;
             this.treeView1.Size = new System.Drawing.Size(187, 611);
             this.treeView1.TabIndex = 0;
+            this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             // 
             // imageList1
             // 
@@ -95,34 +93,9 @@
             // 
             // musicToolStripMenuItem
             // 
-            this.musicToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nameOfSongToolStripMenuItem});
             this.musicToolStripMenuItem.Name = "musicToolStripMenuItem";
             this.musicToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
             this.musicToolStripMenuItem.Text = "Music";
-            // 
-            // nameOfSongToolStripMenuItem
-            // 
-            this.nameOfSongToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pausePlayToolStripMenuItem,
-            this.stopToolStripMenuItem});
-            this.nameOfSongToolStripMenuItem.Enabled = false;
-            this.nameOfSongToolStripMenuItem.Name = "nameOfSongToolStripMenuItem";
-            this.nameOfSongToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
-            this.nameOfSongToolStripMenuItem.Text = "Name of Song";
-            // 
-            // pausePlayToolStripMenuItem
-            // 
-            this.pausePlayToolStripMenuItem.Name = "pausePlayToolStripMenuItem";
-            this.pausePlayToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
-            this.pausePlayToolStripMenuItem.Text = "Pause/Play";
-            this.pausePlayToolStripMenuItem.Click += new System.EventHandler(this.pausePlayToolStripMenuItem_Click);
-            // 
-            // stopToolStripMenuItem
-            // 
-            this.stopToolStripMenuItem.Name = "stopToolStripMenuItem";
-            this.stopToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
-            this.stopToolStripMenuItem.Text = "Stop";
             // 
             // MainForm
             // 
@@ -150,8 +123,5 @@
         private System.Windows.Forms.ToolStripMenuItem saveCampaignToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loadCampaignToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem musicToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem nameOfSongToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pausePlayToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem stopToolStripMenuItem;
     }
 }

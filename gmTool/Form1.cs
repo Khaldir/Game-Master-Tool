@@ -19,6 +19,7 @@ namespace gmTool
         }
 
         private string fileName;
+        private string fPath;
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -34,6 +35,9 @@ namespace gmTool
         {
             fileName = openFileDialog1.SafeFileName.Substring(0, openFileDialog1.SafeFileName.Length - 4);
             groupBox1.Text = fileName;
+
+            fPath = openFileDialog1.FileName.Substring(0, (openFileDialog1.FileName.Length - openFileDialog1.SafeFileName.Length));
+
             using (StreamReader sr = new StreamReader(openFileDialog1.FileName))
             {
                 // Read the stream to a string, and write the string to the console.
@@ -48,7 +52,7 @@ namespace gmTool
             MainForm gmTool;
             if (openFileDialog1.CheckFileExists)
             {
-                gmTool = new MainForm(openFileDialog1.FileName, fileName); 
+                gmTool = new MainForm(fPath, fileName); 
             }
             else
             {
