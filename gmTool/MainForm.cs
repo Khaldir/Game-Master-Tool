@@ -16,9 +16,14 @@ namespace gmTool
     public partial class MainForm : Form
     {
         private string filePath;
+
+        //Music
         private WMPLib.WindowsMediaPlayer[] audioArray = new WMPLib.WindowsMediaPlayer[5];
         private double[] pauseTime = new double[5];
         private int musicCount;
+
+        //Random Lists
+        List<string> randomDescriptions = new List<string>();
 
         private void sharedInit()
         {
@@ -119,7 +124,6 @@ namespace gmTool
                 selectedPath = selectedItem.DirectoryName;
                 selectedPath = selectedPath + @"\" + selectedItem.Name;
 
-
                 //Music
                 if (selectedPath.Substring(selectedPath.Length - 4) == ".mp3")
                 {
@@ -139,7 +143,7 @@ namespace gmTool
                     musicBox.Text = selectedItem.Name;
 
                     ToolStripMenuItem newitem = new ToolStripMenuItem("1 - " + selectedItem.Name);
-                    newitem.Name = musicCount+ " - " + selectedItem.Name;
+                    newitem.Name = musicCount + " - " + selectedItem.Name;
                     newitem.DropDownItems.Add("Play");
                     newitem.DropDownItems[0].Click += new EventHandler(playClick);
 
@@ -149,6 +153,33 @@ namespace gmTool
 
                     musicToolStripMenuItem.DropDownItems.Add(newitem);
                     musicCount++;
+                }
+                else
+                {
+                    randomBox.Text = selectedItem.Name;
+                }
+
+                //Random Tables
+                if (selectedPath.Substring(selectedPath.Length - 4) == ".rdm")
+                {
+
+                    randomBox.Visible = true;
+                    // HIDE ALL OTHER MAIN PANELS
+
+                    randomListBox.Items.Clear();
+
+                    randomBox.Text = selectedItem.Name;
+                    randomDescriptions.Clear();
+                    using (StreamReader r = new StreamReader(selectedPath))
+                    {
+                        string line;
+                        while ((line = r.ReadLine()) != null)
+                        {
+                            randomListBox.Items.Add(line);
+                            line = r.ReadLine();
+                            randomDescriptions.Add(line);
+                        }
+                    }
                 }
             }
         }
@@ -209,6 +240,18 @@ namespace gmTool
         {
             audioArray[0].controls.stop();
             audioArray[0] = new WMPLib.WindowsMediaPlayer();
+        }
+
+        private void randomListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            randomNameLabel.Text = randomListBox.Items[randomListBox.SelectedIndex].ToString();
+            randomDescBox.Text = randomDescriptions[randomListBox.SelectedIndex];
+        }
+
+        private void rerollRandomButton_Click(object sender, EventArgs e)
+        {
+            Random rnd = new Random();
+            randomListBox.SelectedIndex = rnd.Next(randomListBox.Items.Count);
         }
     }
 }
