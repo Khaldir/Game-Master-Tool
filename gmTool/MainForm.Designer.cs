@@ -64,11 +64,12 @@
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.progressBar2 = new System.Windows.Forms.ProgressBar();
             this.randomBox = new System.Windows.Forms.GroupBox();
-            this.rerollRandomButton = new System.Windows.Forms.Button();
-            this.randomListBox = new System.Windows.Forms.ListBox();
-            this.newRandomItem = new System.Windows.Forms.Button();
-            this.randomNameLabel = new System.Windows.Forms.TextBox();
             this.randomDescBox = new System.Windows.Forms.TextBox();
+            this.randomNameLabel = new System.Windows.Forms.TextBox();
+            this.newRandomItem = new System.Windows.Forms.Button();
+            this.randomListBox = new System.Windows.Forms.ListBox();
+            this.rerollRandomButton = new System.Windows.Forms.Button();
+            this.randomSaveButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.musicBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.volumeControl)).BeginInit();
@@ -408,6 +409,7 @@
             // 
             // randomBox
             // 
+            this.randomBox.Controls.Add(this.randomSaveButton);
             this.randomBox.Controls.Add(this.randomDescBox);
             this.randomBox.Controls.Add(this.randomNameLabel);
             this.randomBox.Controls.Add(this.newRandomItem);
@@ -420,6 +422,42 @@
             this.randomBox.TabStop = false;
             this.randomBox.Text = "groupBox1";
             // 
+            // randomDescBox
+            // 
+            this.randomDescBox.Location = new System.Drawing.Point(132, 58);
+            this.randomDescBox.Multiline = true;
+            this.randomDescBox.Name = "randomDescBox";
+            this.randomDescBox.Size = new System.Drawing.Size(408, 500);
+            this.randomDescBox.TabIndex = 5;
+            this.randomDescBox.TextChanged += new System.EventHandler(this.randomDataChanged);
+            // 
+            // randomNameLabel
+            // 
+            this.randomNameLabel.Location = new System.Drawing.Point(132, 21);
+            this.randomNameLabel.Name = "randomNameLabel";
+            this.randomNameLabel.Size = new System.Drawing.Size(327, 20);
+            this.randomNameLabel.TabIndex = 4;
+            this.randomNameLabel.TextChanged += new System.EventHandler(this.randomDataChanged);
+            // 
+            // newRandomItem
+            // 
+            this.newRandomItem.Location = new System.Drawing.Point(6, 508);
+            this.newRandomItem.Name = "newRandomItem";
+            this.newRandomItem.Size = new System.Drawing.Size(120, 22);
+            this.newRandomItem.TabIndex = 3;
+            this.newRandomItem.Text = "Add to List";
+            this.newRandomItem.UseVisualStyleBackColor = true;
+            this.newRandomItem.Click += new System.EventHandler(this.newRandomItem_Click);
+            // 
+            // randomListBox
+            // 
+            this.randomListBox.FormattingEnabled = true;
+            this.randomListBox.Location = new System.Drawing.Point(6, 19);
+            this.randomListBox.Name = "randomListBox";
+            this.randomListBox.Size = new System.Drawing.Size(120, 485);
+            this.randomListBox.TabIndex = 1;
+            this.randomListBox.SelectedIndexChanged += new System.EventHandler(this.randomListBox_SelectedIndexChanged);
+            // 
             // rerollRandomButton
             // 
             this.rerollRandomButton.Location = new System.Drawing.Point(465, 19);
@@ -430,38 +468,15 @@
             this.rerollRandomButton.UseVisualStyleBackColor = true;
             this.rerollRandomButton.Click += new System.EventHandler(this.rerollRandomButton_Click);
             // 
-            // randomListBox
+            // randomSaveButton
             // 
-            this.randomListBox.FormattingEnabled = true;
-            this.randomListBox.Location = new System.Drawing.Point(6, 19);
-            this.randomListBox.Name = "randomListBox";
-            this.randomListBox.Size = new System.Drawing.Size(120, 511);
-            this.randomListBox.TabIndex = 1;
-            this.randomListBox.SelectedIndexChanged += new System.EventHandler(this.randomListBox_SelectedIndexChanged);
-            // 
-            // newRandomItem
-            // 
-            this.newRandomItem.Location = new System.Drawing.Point(6, 536);
-            this.newRandomItem.Name = "newRandomItem";
-            this.newRandomItem.Size = new System.Drawing.Size(120, 22);
-            this.newRandomItem.TabIndex = 3;
-            this.newRandomItem.Text = "button1";
-            this.newRandomItem.UseVisualStyleBackColor = true;
-            // 
-            // randomNameLabel
-            // 
-            this.randomNameLabel.Location = new System.Drawing.Point(132, 21);
-            this.randomNameLabel.Name = "randomNameLabel";
-            this.randomNameLabel.Size = new System.Drawing.Size(327, 20);
-            this.randomNameLabel.TabIndex = 4;
-            // 
-            // randomDescBox
-            // 
-            this.randomDescBox.Location = new System.Drawing.Point(132, 58);
-            this.randomDescBox.Multiline = true;
-            this.randomDescBox.Name = "randomDescBox";
-            this.randomDescBox.Size = new System.Drawing.Size(408, 500);
-            this.randomDescBox.TabIndex = 5;
+            this.randomSaveButton.Location = new System.Drawing.Point(6, 536);
+            this.randomSaveButton.Name = "randomSaveButton";
+            this.randomSaveButton.Size = new System.Drawing.Size(120, 22);
+            this.randomSaveButton.TabIndex = 6;
+            this.randomSaveButton.Text = "Save Changes";
+            this.randomSaveButton.UseVisualStyleBackColor = true;
+            this.randomSaveButton.Click += new System.EventHandler(this.saveRandom);
             // 
             // MainForm
             // 
@@ -536,5 +551,6 @@
         private System.Windows.Forms.TextBox randomNameLabel;
         private System.Windows.Forms.Button newRandomItem;
         private System.Windows.Forms.TextBox randomDescBox;
+        private System.Windows.Forms.Button randomSaveButton;
     }
 }

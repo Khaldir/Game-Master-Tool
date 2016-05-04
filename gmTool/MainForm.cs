@@ -24,6 +24,8 @@ namespace gmTool
 
         //Random Lists
         List<string> randomDescriptions = new List<string>();
+        private int oldIndex = -1;
+        private string[] oldData = { "", "" };
 
         private void sharedInit()
         {
@@ -165,7 +167,7 @@ namespace gmTool
 
                     randomBox.Visible = true;
                     // HIDE ALL OTHER MAIN PANELS
-
+                    oldIndex = -1;
                     randomListBox.Items.Clear();
 
                     randomBox.Text = selectedItem.Name;
@@ -244,14 +246,73 @@ namespace gmTool
 
         private void randomListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            randomNameLabel.Text = randomListBox.Items[randomListBox.SelectedIndex].ToString();
-            randomDescBox.Text = randomDescriptions[randomListBox.SelectedIndex];
+            if (oldIndex != randomListBox.SelectedIndex)
+            {
+                saveRandom(oldIndex);
+                randomNameLabel.Text = randomListBox.Items[randomListBox.SelectedIndex].ToString();
+                randomDescBox.Text = randomDescriptions[randomListBox.SelectedIndex];
+                oldIndex = randomListBox.SelectedIndex;
+                randomDataChanged();
+            }
+        }
+
+        private void randomDataChanged()
+        {
+            oldData[0] = randomNameLabel.Text;
+            oldData[1] = randomDescBox.Text;
         }
 
         private void rerollRandomButton_Click(object sender, EventArgs e)
         {
             Random rnd = new Random();
             randomListBox.SelectedIndex = rnd.Next(randomListBox.Items.Count);
+        }
+
+        private void newRandomItem_Click(object sender, EventArgs e)
+        {
+            randomListBox.Items.Add("New");
+            randomDescBox.Clear();
+            randomDescriptions.Add("New Item");
+            randomListBox.SelectedIndex = randomListBox.Items.Count - 1;
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void saveRandom(object sender, EventArgs e)
+        {
+            randomDescriptions[randomListBox.SelectedIndex] = randomDescBox.Text;
+            randomListBox.Items[randomListBox.SelectedIndex] = randomNameLabel.Text;
+        }
+        private void saveRandom(int index)
+        {
+            if (index != -1)
+            {
+                randomDescriptions[index] = oldData[1];
+                randomListBox.Items[index] = oldData[0];
+            }
+            
+        }
+        private void saveRandomFile()
+        {
+            FileInfo selectedItem = (FileInfo)treeView1.SelectedNode.Tag;
+            string selectedPath = selectedItem.DirectoryName;
+            selectedPath = selectedPath + @"\" + selectedItem.Name;
+
+            System.IO.StreamWriter file = new System.IO.StreamWriter(selectedPath);
+            for (int i = 0; i <= randomDescriptions.Count; i++)
+            {
+                file.WriteLine(randomListBox.Items[i]);
+                file.WriteLine(randomDescriptions[i]);
+            }
+        }
+
+        private void randomDataChanged(object sender, EventArgs e)
+        {
+            randomDataChanged();
         }
     }
 }
