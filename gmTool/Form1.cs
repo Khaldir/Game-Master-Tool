@@ -35,6 +35,7 @@ namespace gmTool
         {
             fileName = openFileDialog1.SafeFileName.Substring(0, openFileDialog1.SafeFileName.Length - 4);
             groupBox1.Text = fileName;
+            filePathDisplay.Text = openFileDialog1.FileName;
 
             fPath = openFileDialog1.FileName.Substring(0, (openFileDialog1.FileName.Length - openFileDialog1.SafeFileName.Length));
 

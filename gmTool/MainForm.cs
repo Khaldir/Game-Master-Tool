@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Timers;
 
 
 
@@ -17,6 +18,10 @@ namespace gmTool
     {
         private string filePath;
 
+        //Button Arrays
+        Button[] stopButtons = new Button[5];
+        
+        
         //Music
         private WMPLib.WindowsMediaPlayer[] audioArray = new WMPLib.WindowsMediaPlayer[5];
         private double[] pauseTime = new double[5];
@@ -31,6 +36,11 @@ namespace gmTool
         {
             InitializeComponent();
             WMPLib.WindowsMediaPlayer audioPlayer = new WMPLib.WindowsMediaPlayer();
+            stopButtons[0] = stopbutton1;
+            stopButtons[1] = stopButton2;
+            stopButtons[2] = stopButton3;
+            stopButtons[3] = stopButton4;
+            stopButtons[4] = stopButton5;
         }
     
 
@@ -86,7 +96,8 @@ namespace gmTool
                     bNode = new TreeNode(file.Name, 1, 1);
                     bNode.Tag = file;
                     bNode.ImageKey = "file";
-                    aNode.Nodes.Add(bNode);
+                    if (file.Extension == ".txt" || file.Extension == ".mp3" || file.Extension == ".rdm")
+                        aNode.Nodes.Add(bNode);
                 }
 
                 nodeToAddTo.Nodes.Add(aNode);
@@ -115,6 +126,36 @@ namespace gmTool
             pause(selectedMusicCount);
         }
 
+        void updateProgress(int index)
+        {
+            double percent = ((double)audioArray[index].controls.currentPosition / audioArray[index].controls.currentItem.duration) * 500;
+            switch (index)
+            {
+                case 0: progressBar1.Value = (int)percent; break;
+                case 1: progressBar2.Value = (int)percent; break;
+                case 2: progressBar3.Value = (int)percent; break;
+                case 3: progressBar4.Value = (int)percent; break;
+                case 4: progressBar5.Value = (int)percent; break;
+            }
+        }
+
+        
+        private void myEvent(object source, EventArgs e)
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                if (audioArray[i] != null)
+                {
+                    updateProgress(i);
+                }
+            }
+        }
+
+        void Player_PlayStateChange(int NewState)
+        {
+
+        }
+
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
 
@@ -129,10 +170,23 @@ namespace gmTool
                 //Music
                 if (selectedPath.Substring(selectedPath.Length - 4) == ".mp3")
                 {
+                    // Create a timer
+                    System.Windows.Forms.Timer myTimer = new System.Windows.Forms.Timer();
+                    // Tell the timer what to do when it elapses
+                    myTimer.Tick += new EventHandler(myEvent);
+                    // Set it to go off every second
+                    myTimer.Interval = 500;
+                    // And start it        
+                    myTimer.Enabled = true;
+
+
                     audioArray[musicCount] = new WMPLib.WindowsMediaPlayer();
+
+                    audioArray[musicCount].PlayStateChange += new WMPLib._WMPOCXEvents_PlayStateChangeEventHandler(Player_PlayStateChange);
                     audioArray[musicCount].URL = selectedPath;
                     audioArray[musicCount].controls.play();
-
+                    
+                    stopButtons[musicCount].Enabled = true;
                     GroupBox musicBox = musicBox1;
                     switch (musicCount)
                     {
@@ -146,7 +200,7 @@ namespace gmTool
 
                     ToolStripMenuItem newitem = new ToolStripMenuItem("1 - " + selectedItem.Name);
                     newitem.Name = musicCount + " - " + selectedItem.Name;
-                    newitem.DropDownItems.Add("Play");
+                    newitem.DropDownItems.Add("Play/Pause");
                     newitem.DropDownItems[0].Click += new EventHandler(playClick);
 
                     newitem.DropDownItems.Add("Volume +");
@@ -164,7 +218,7 @@ namespace gmTool
                 //Random Tables
                 if (selectedPath.Substring(selectedPath.Length - 4) == ".rdm")
                 {
-
+                    notesBox.Visible = false;
                     randomBox.Visible = true;
                     // HIDE ALL OTHER MAIN PANELS
                     oldIndex = -1;
@@ -183,8 +237,54 @@ namespace gmTool
                         }
                     }
                 }
+
+                //Notes
+                if (selectedPath.Substring(selectedPath.Length - 4) == ".txt")
+                {
+                    randomBox.Visible = false;
+                    notesBox.Visible = true;
+                    notesBox.Text = selectedItem.Name;
+
+                    notes.Clear();
+                    using (StreamReader r = new StreamReader(selectedPath))
+                    {
+                        string line;
+                        while ((line = r.ReadLine()) != null)
+                        {
+                            notes.AppendText(line);
+                            notes.AppendText("\n");
+                        }
+                    }
+                    string imageFile = selectedPath.Substring(0, selectedPath.Length - 4) + ".png";
+                    if (File.Exists(imageFile))
+                    {
+                        loadNotesImage(imageFile);
+                    }
+                    else
+                    {
+                        imageFile = selectedPath.Substring(0, selectedPath.Length - 4) + ".jpg";
+                        if (File.Exists(imageFile))
+                        {
+                            loadNotesImage(imageFile);
+                        }
+                        else
+                        {
+                            imageFile = selectedPath.Substring(0, selectedPath.Length - 4) + ".bmp";
+                            if (File.Exists(imageFile))
+                            {
+                                loadNotesImage(imageFile);
+                            }
+                        }
+                    }
+                }
             }
         }
+
+        private void loadNotesImage(string filePath)
+        {
+            notesPictureBox.Load(filePath);
+        }
+
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -235,13 +335,22 @@ namespace gmTool
 
         private void pausebutton1_Click(object sender, EventArgs e)
         {
-            pause(0);
+            Button item = (Button)sender;
+            string name = item.Name;
+            int index = Int32.Parse(name.Substring(name.Length - 1));
+
+            pause(index);
         }
 
         private void stopbutton1_Click(object sender, EventArgs e)
         {
-            audioArray[0].controls.stop();
-            audioArray[0] = new WMPLib.WindowsMediaPlayer();
+            Button item = (Button)sender;
+            string name = item.Name;
+            int index = Int32.Parse(name.Substring(name.Length - 1)) - 1;
+            item.Enabled = false;
+
+            audioArray[index].controls.stop();
+            audioArray[index] = new WMPLib.WindowsMediaPlayer();
         }
 
         private void randomListBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -286,6 +395,7 @@ namespace gmTool
         {
             randomDescriptions[randomListBox.SelectedIndex] = randomDescBox.Text;
             randomListBox.Items[randomListBox.SelectedIndex] = randomNameLabel.Text;
+            saveRandomFile();
         }
         private void saveRandom(int index)
         {
@@ -303,16 +413,30 @@ namespace gmTool
             selectedPath = selectedPath + @"\" + selectedItem.Name;
 
             System.IO.StreamWriter file = new System.IO.StreamWriter(selectedPath);
-            for (int i = 0; i <= randomDescriptions.Count; i++)
+            for (int i = 0; i < randomDescriptions.Count; i++)
             {
                 file.WriteLine(randomListBox.Items[i]);
                 file.WriteLine(randomDescriptions[i]);
             }
+            file.Close();
         }
 
         private void randomDataChanged(object sender, EventArgs e)
         {
             randomDataChanged();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            FileInfo selectedItem = (FileInfo)treeView1.SelectedNode.Tag;
+            string selectedPath = selectedItem.DirectoryName;
+            selectedPath = selectedPath + @"\" + selectedItem.Name;
+
+            System.IO.StreamWriter file = new System.IO.StreamWriter(selectedPath);
+            foreach (string line in notes.Lines)
+                file.WriteLine(line);
+
+            file.Close();
         }
     }
 }

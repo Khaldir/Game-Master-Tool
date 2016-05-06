@@ -45,31 +45,35 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.musicBox5 = new System.Windows.Forms.GroupBox();
             this.pausebutton5 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.stopButton5 = new System.Windows.Forms.Button();
             this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
             this.progressBar5 = new System.Windows.Forms.ProgressBar();
             this.musicBox4 = new System.Windows.Forms.GroupBox();
             this.pausebutton4 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.stopButton4 = new System.Windows.Forms.Button();
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
             this.progressBar4 = new System.Windows.Forms.ProgressBar();
             this.musicBox3 = new System.Windows.Forms.GroupBox();
             this.pausebutton3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.stopButton3 = new System.Windows.Forms.Button();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.progressBar3 = new System.Windows.Forms.ProgressBar();
             this.musicBox2 = new System.Windows.Forms.GroupBox();
             this.pausebutton2 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.stopButton2 = new System.Windows.Forms.Button();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.progressBar2 = new System.Windows.Forms.ProgressBar();
             this.randomBox = new System.Windows.Forms.GroupBox();
+            this.randomSaveButton = new System.Windows.Forms.Button();
             this.randomDescBox = new System.Windows.Forms.TextBox();
             this.randomNameLabel = new System.Windows.Forms.TextBox();
             this.newRandomItem = new System.Windows.Forms.Button();
             this.randomListBox = new System.Windows.Forms.ListBox();
             this.rerollRandomButton = new System.Windows.Forms.Button();
-            this.randomSaveButton = new System.Windows.Forms.Button();
+            this.notesBox = new System.Windows.Forms.GroupBox();
+            this.notesPictureBox = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.notes = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.musicBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.volumeControl)).BeginInit();
@@ -83,6 +87,8 @@
             this.musicBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.randomBox.SuspendLayout();
+            this.notesBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.notesPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // treeView1
@@ -191,8 +197,10 @@
             // progressBar1
             // 
             this.progressBar1.Location = new System.Drawing.Point(6, 43);
+            this.progressBar1.Maximum = 500;
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(207, 23);
+            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar1.TabIndex = 0;
             // 
             // panel1
@@ -210,7 +218,7 @@
             // musicBox5
             // 
             this.musicBox5.Controls.Add(this.pausebutton5);
-            this.musicBox5.Controls.Add(this.button8);
+            this.musicBox5.Controls.Add(this.stopButton5);
             this.musicBox5.Controls.Add(this.numericUpDown4);
             this.musicBox5.Controls.Add(this.progressBar5);
             this.musicBox5.Location = new System.Drawing.Point(3, 459);
@@ -227,16 +235,18 @@
             this.pausebutton5.TabIndex = 4;
             this.pausebutton5.Text = "Play";
             this.pausebutton5.UseVisualStyleBackColor = true;
+            this.pausebutton5.Click += new System.EventHandler(this.pausebutton1_Click);
             // 
-            // button8
+            // stopButton5
             // 
-            this.button8.Enabled = false;
-            this.button8.Location = new System.Drawing.Point(123, 72);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(88, 23);
-            this.button8.TabIndex = 3;
-            this.button8.Text = "Stop";
-            this.button8.UseVisualStyleBackColor = true;
+            this.stopButton5.Enabled = false;
+            this.stopButton5.Location = new System.Drawing.Point(123, 72);
+            this.stopButton5.Name = "stopButton5";
+            this.stopButton5.Size = new System.Drawing.Size(88, 23);
+            this.stopButton5.TabIndex = 3;
+            this.stopButton5.Text = "Stop";
+            this.stopButton5.UseVisualStyleBackColor = true;
+            this.stopButton5.Click += new System.EventHandler(this.stopbutton1_Click);
             // 
             // numericUpDown4
             // 
@@ -253,14 +263,16 @@
             // progressBar5
             // 
             this.progressBar5.Location = new System.Drawing.Point(6, 43);
+            this.progressBar5.Maximum = 500;
             this.progressBar5.Name = "progressBar5";
             this.progressBar5.Size = new System.Drawing.Size(207, 23);
+            this.progressBar5.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar5.TabIndex = 0;
             // 
             // musicBox4
             // 
             this.musicBox4.Controls.Add(this.pausebutton4);
-            this.musicBox4.Controls.Add(this.button6);
+            this.musicBox4.Controls.Add(this.stopButton4);
             this.musicBox4.Controls.Add(this.numericUpDown3);
             this.musicBox4.Controls.Add(this.progressBar4);
             this.musicBox4.Location = new System.Drawing.Point(3, 345);
@@ -277,16 +289,18 @@
             this.pausebutton4.TabIndex = 4;
             this.pausebutton4.Text = "Play";
             this.pausebutton4.UseVisualStyleBackColor = true;
+            this.pausebutton4.Click += new System.EventHandler(this.pausebutton1_Click);
             // 
-            // button6
+            // stopButton4
             // 
-            this.button6.Enabled = false;
-            this.button6.Location = new System.Drawing.Point(123, 72);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(88, 23);
-            this.button6.TabIndex = 3;
-            this.button6.Text = "Stop";
-            this.button6.UseVisualStyleBackColor = true;
+            this.stopButton4.Enabled = false;
+            this.stopButton4.Location = new System.Drawing.Point(123, 72);
+            this.stopButton4.Name = "stopButton4";
+            this.stopButton4.Size = new System.Drawing.Size(88, 23);
+            this.stopButton4.TabIndex = 3;
+            this.stopButton4.Text = "Stop";
+            this.stopButton4.UseVisualStyleBackColor = true;
+            this.stopButton4.Click += new System.EventHandler(this.stopbutton1_Click);
             // 
             // numericUpDown3
             // 
@@ -303,14 +317,16 @@
             // progressBar4
             // 
             this.progressBar4.Location = new System.Drawing.Point(6, 43);
+            this.progressBar4.Maximum = 500;
             this.progressBar4.Name = "progressBar4";
             this.progressBar4.Size = new System.Drawing.Size(207, 23);
+            this.progressBar4.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar4.TabIndex = 0;
             // 
             // musicBox3
             // 
             this.musicBox3.Controls.Add(this.pausebutton3);
-            this.musicBox3.Controls.Add(this.button4);
+            this.musicBox3.Controls.Add(this.stopButton3);
             this.musicBox3.Controls.Add(this.numericUpDown2);
             this.musicBox3.Controls.Add(this.progressBar3);
             this.musicBox3.Location = new System.Drawing.Point(3, 231);
@@ -327,16 +343,18 @@
             this.pausebutton3.TabIndex = 4;
             this.pausebutton3.Text = "Play";
             this.pausebutton3.UseVisualStyleBackColor = true;
+            this.pausebutton3.Click += new System.EventHandler(this.pausebutton1_Click);
             // 
-            // button4
+            // stopButton3
             // 
-            this.button4.Enabled = false;
-            this.button4.Location = new System.Drawing.Point(123, 72);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(88, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Stop";
-            this.button4.UseVisualStyleBackColor = true;
+            this.stopButton3.Enabled = false;
+            this.stopButton3.Location = new System.Drawing.Point(123, 72);
+            this.stopButton3.Name = "stopButton3";
+            this.stopButton3.Size = new System.Drawing.Size(88, 23);
+            this.stopButton3.TabIndex = 3;
+            this.stopButton3.Text = "Stop";
+            this.stopButton3.UseVisualStyleBackColor = true;
+            this.stopButton3.Click += new System.EventHandler(this.stopbutton1_Click);
             // 
             // numericUpDown2
             // 
@@ -353,14 +371,16 @@
             // progressBar3
             // 
             this.progressBar3.Location = new System.Drawing.Point(6, 43);
+            this.progressBar3.Maximum = 500;
             this.progressBar3.Name = "progressBar3";
             this.progressBar3.Size = new System.Drawing.Size(207, 23);
+            this.progressBar3.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar3.TabIndex = 0;
             // 
             // musicBox2
             // 
             this.musicBox2.Controls.Add(this.pausebutton2);
-            this.musicBox2.Controls.Add(this.button2);
+            this.musicBox2.Controls.Add(this.stopButton2);
             this.musicBox2.Controls.Add(this.numericUpDown1);
             this.musicBox2.Controls.Add(this.progressBar2);
             this.musicBox2.Location = new System.Drawing.Point(3, 117);
@@ -377,16 +397,18 @@
             this.pausebutton2.TabIndex = 4;
             this.pausebutton2.Text = "Play";
             this.pausebutton2.UseVisualStyleBackColor = true;
+            this.pausebutton2.Click += new System.EventHandler(this.pausebutton1_Click);
             // 
-            // button2
+            // stopButton2
             // 
-            this.button2.Enabled = false;
-            this.button2.Location = new System.Drawing.Point(123, 72);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(88, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Stop";
-            this.button2.UseVisualStyleBackColor = true;
+            this.stopButton2.Enabled = false;
+            this.stopButton2.Location = new System.Drawing.Point(123, 72);
+            this.stopButton2.Name = "stopButton2";
+            this.stopButton2.Size = new System.Drawing.Size(88, 23);
+            this.stopButton2.TabIndex = 3;
+            this.stopButton2.Text = "Stop";
+            this.stopButton2.UseVisualStyleBackColor = true;
+            this.stopButton2.Click += new System.EventHandler(this.stopbutton1_Click);
             // 
             // numericUpDown1
             // 
@@ -403,8 +425,10 @@
             // progressBar2
             // 
             this.progressBar2.Location = new System.Drawing.Point(6, 43);
+            this.progressBar2.Maximum = 500;
             this.progressBar2.Name = "progressBar2";
             this.progressBar2.Size = new System.Drawing.Size(207, 23);
+            this.progressBar2.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar2.TabIndex = 0;
             // 
             // randomBox
@@ -421,6 +445,17 @@
             this.randomBox.TabIndex = 8;
             this.randomBox.TabStop = false;
             this.randomBox.Text = "groupBox1";
+            this.randomBox.Visible = false;
+            // 
+            // randomSaveButton
+            // 
+            this.randomSaveButton.Location = new System.Drawing.Point(6, 536);
+            this.randomSaveButton.Name = "randomSaveButton";
+            this.randomSaveButton.Size = new System.Drawing.Size(120, 22);
+            this.randomSaveButton.TabIndex = 6;
+            this.randomSaveButton.Text = "Save Changes";
+            this.randomSaveButton.UseVisualStyleBackColor = true;
+            this.randomSaveButton.Click += new System.EventHandler(this.saveRandom);
             // 
             // randomDescBox
             // 
@@ -468,21 +503,53 @@
             this.rerollRandomButton.UseVisualStyleBackColor = true;
             this.rerollRandomButton.Click += new System.EventHandler(this.rerollRandomButton_Click);
             // 
-            // randomSaveButton
+            // notesBox
             // 
-            this.randomSaveButton.Location = new System.Drawing.Point(6, 536);
-            this.randomSaveButton.Name = "randomSaveButton";
-            this.randomSaveButton.Size = new System.Drawing.Size(120, 22);
-            this.randomSaveButton.TabIndex = 6;
-            this.randomSaveButton.Text = "Save Changes";
-            this.randomSaveButton.UseVisualStyleBackColor = true;
-            this.randomSaveButton.Click += new System.EventHandler(this.saveRandom);
+            this.notesBox.Controls.Add(this.notesPictureBox);
+            this.notesBox.Controls.Add(this.button1);
+            this.notesBox.Controls.Add(this.notes);
+            this.notesBox.Location = new System.Drawing.Point(193, 27);
+            this.notesBox.Name = "notesBox";
+            this.notesBox.Size = new System.Drawing.Size(546, 564);
+            this.notesBox.TabIndex = 9;
+            this.notesBox.TabStop = false;
+            this.notesBox.Text = "groupBox1";
+            this.notesBox.Visible = false;
+            // 
+            // notesPictureBox
+            // 
+            this.notesPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.notesPictureBox.Location = new System.Drawing.Point(420, 19);
+            this.notesPictureBox.Name = "notesPictureBox";
+            this.notesPictureBox.Size = new System.Drawing.Size(120, 510);
+            this.notesPictureBox.TabIndex = 4;
+            this.notesPictureBox.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(420, 535);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(120, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Save Changes";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // notes
+            // 
+            this.notes.Location = new System.Drawing.Point(6, 19);
+            this.notes.Multiline = true;
+            this.notes.Name = "notes";
+            this.notes.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.notes.Size = new System.Drawing.Size(408, 539);
+            this.notes.TabIndex = 1;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(971, 597);
+            this.Controls.Add(this.notesBox);
             this.Controls.Add(this.randomBox);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.treeView1);
@@ -505,12 +572,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.randomBox.ResumeLayout(false);
             this.randomBox.PerformLayout();
+            this.notesBox.ResumeLayout(false);
+            this.notesBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.notesPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
+
+        
 
         private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.ImageList imageList1;
@@ -527,22 +599,22 @@
         private System.Windows.Forms.Button stopbutton1;
         private System.Windows.Forms.GroupBox musicBox5;
         private System.Windows.Forms.Button pausebutton5;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button stopButton5;
         private System.Windows.Forms.NumericUpDown numericUpDown4;
         private System.Windows.Forms.ProgressBar progressBar5;
         private System.Windows.Forms.GroupBox musicBox4;
         private System.Windows.Forms.Button pausebutton4;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button stopButton4;
         private System.Windows.Forms.NumericUpDown numericUpDown3;
         private System.Windows.Forms.ProgressBar progressBar4;
         private System.Windows.Forms.GroupBox musicBox3;
         private System.Windows.Forms.Button pausebutton3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button stopButton3;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.ProgressBar progressBar3;
         private System.Windows.Forms.GroupBox musicBox2;
         private System.Windows.Forms.Button pausebutton2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button stopButton2;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.ProgressBar progressBar2;
         private System.Windows.Forms.GroupBox randomBox;
@@ -552,5 +624,9 @@
         private System.Windows.Forms.Button newRandomItem;
         private System.Windows.Forms.TextBox randomDescBox;
         private System.Windows.Forms.Button randomSaveButton;
+        private System.Windows.Forms.GroupBox notesBox;
+        private System.Windows.Forms.PictureBox notesPictureBox;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox notes;
     }
 }
