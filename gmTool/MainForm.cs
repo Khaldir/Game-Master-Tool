@@ -122,13 +122,32 @@ namespace gmTool
         void playClick(object sender, System.EventArgs e)
         {
             ToolStripItem clickedButton = (ToolStripItem)sender;
-            int selectedMusicCount = Int32.Parse(clickedButton.OwnerItem.Name.Substring(0, 1));
+            int selectedMusicCount = Int32.Parse(clickedButton.OwnerItem.Name.Substring(0, 1))-1;
             pause(selectedMusicCount);
         }
 
-        void updateProgress(int index)
+        void updateProgress(int index, bool manual)
         {
             double percent = ((double)audioArray[index].controls.currentPosition / audioArray[index].controls.currentItem.duration) * 500;
+            if (manual)
+            {
+                int barPercent = 0;
+                switch (index)
+                {
+                    case 0: barPercent = progressBar1.Value; break;
+                    case 1: barPercent = progressBar2.Value; break;
+                    case 2: barPercent = progressBar3.Value; break;
+                    case 3: barPercent = progressBar4.Value; break;
+                    case 4: barPercent = progressBar5.Value; break;
+                }
+                if ((int)percent != barPercent)
+                {
+                    audioArray[index].controls.currentPosition = (double)barPercent / 500 * audioArray[index].controls.currentItem.duration;
+                }
+
+
+            }
+
             switch (index)
             {
                 case 0: progressBar1.Value = (int)percent; break;
@@ -146,7 +165,7 @@ namespace gmTool
             {
                 if (audioArray[i] != null)
                 {
-                    updateProgress(i);
+                    updateProgress(i, false);
                 }
             }
         }
@@ -330,7 +349,9 @@ namespace gmTool
 
         private void volumeChanged(object sender, EventArgs e)
         {
-            audioArray[0].settings.volume = (int)volumeControl.Value;
+            NumericUpDown item = (NumericUpDown)sender;
+            int selectedMusicCount = Int32.Parse(item.Name.Substring(0, 1))-1;
+            audioArray[selectedMusicCount].settings.volume = (int)volumeControl.Value;
         }
 
         private void pausebutton1_Click(object sender, EventArgs e)
@@ -350,7 +371,7 @@ namespace gmTool
             item.Enabled = false;
 
             audioArray[index].controls.stop();
-            audioArray[index] = new WMPLib.WindowsMediaPlayer();
+            audioArray[index] = null;
         }
 
         private void randomListBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -441,7 +462,9 @@ namespace gmTool
 
         private void progressBar1_Scroll(object sender, EventArgs e)
         {
-
+            TrackBar item = (TrackBar)sender;
+            int selectedMusicCount = Int32.Parse(item.Name.Substring(item.Name.Length-1, 1)) - 1;
+            updateProgress(selectedMusicCount, true);
         }
     }
 }
