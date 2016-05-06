@@ -41,7 +41,6 @@
             this.pausebutton1 = new System.Windows.Forms.Button();
             this.stopbutton1 = new System.Windows.Forms.Button();
             this.volumeControl = new System.Windows.Forms.NumericUpDown();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.panel1 = new System.Windows.Forms.Panel();
             this.musicBox5 = new System.Windows.Forms.GroupBox();
             this.pausebutton5 = new System.Windows.Forms.Button();
@@ -74,6 +73,7 @@
             this.notesPictureBox = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.notes = new System.Windows.Forms.TextBox();
+            this.progressBar1 = new System.Windows.Forms.TrackBar();
             this.menuStrip1.SuspendLayout();
             this.musicBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.volumeControl)).BeginInit();
@@ -89,6 +89,7 @@
             this.randomBox.SuspendLayout();
             this.notesBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.notesPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressBar1)).BeginInit();
             this.SuspendLayout();
             // 
             // treeView1
@@ -150,10 +151,10 @@
             // 
             // musicBox1
             // 
-            this.musicBox1.Controls.Add(this.pausebutton1);
             this.musicBox1.Controls.Add(this.stopbutton1);
-            this.musicBox1.Controls.Add(this.volumeControl);
+            this.musicBox1.Controls.Add(this.pausebutton1);
             this.musicBox1.Controls.Add(this.progressBar1);
+            this.musicBox1.Controls.Add(this.volumeControl);
             this.musicBox1.Location = new System.Drawing.Point(3, 3);
             this.musicBox1.Name = "musicBox1";
             this.musicBox1.Size = new System.Drawing.Size(219, 108);
@@ -193,15 +194,6 @@
             0,
             0});
             this.volumeControl.ValueChanged += new System.EventHandler(this.volumeChanged);
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.Location = new System.Drawing.Point(6, 43);
-            this.progressBar1.Maximum = 500;
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(207, 23);
-            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.progressBar1.TabIndex = 0;
             // 
             // panel1
             // 
@@ -544,6 +536,15 @@
             this.notes.Size = new System.Drawing.Size(408, 539);
             this.notes.TabIndex = 1;
             // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(6, 38);
+            this.progressBar1.Maximum = 500;
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(207, 45);
+            this.progressBar1.TabIndex = 5;
+            this.progressBar1.Scroll += new System.EventHandler(this.progressBar1_Scroll);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -560,6 +561,7 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.musicBox1.ResumeLayout(false);
+            this.musicBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.volumeControl)).EndInit();
             this.panel1.ResumeLayout(false);
             this.musicBox5.ResumeLayout(false);
@@ -575,6 +577,7 @@
             this.notesBox.ResumeLayout(false);
             this.notesBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.notesPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressBar1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -593,7 +596,6 @@
         private System.Windows.Forms.ToolStripMenuItem musicToolStripMenuItem;
         private System.Windows.Forms.GroupBox musicBox1;
         private System.Windows.Forms.NumericUpDown volumeControl;
-        private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button pausebutton1;
         private System.Windows.Forms.Button stopbutton1;
@@ -628,5 +630,6 @@
         private System.Windows.Forms.PictureBox notesPictureBox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox notes;
+        private System.Windows.Forms.TrackBar progressBar1;
     }
 }

@@ -337,7 +337,7 @@ namespace gmTool
         {
             Button item = (Button)sender;
             string name = item.Name;
-            int index = Int32.Parse(name.Substring(name.Length - 1));
+            int index = Int32.Parse(name.Substring(name.Length - 1))-1;
 
             pause(index);
         }
@@ -437,6 +437,11 @@ namespace gmTool
                 file.WriteLine(line);
 
             file.Close();
+        }
+
+        private void progressBar1_Scroll(object sender, EventArgs e)
+        {
+
         }
     }
 }
