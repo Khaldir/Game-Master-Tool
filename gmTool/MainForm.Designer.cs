@@ -47,18 +47,22 @@
             this.pausebutton5 = new System.Windows.Forms.Button();
             this.stopButton5 = new System.Windows.Forms.Button();
             this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.progressBar5 = new System.Windows.Forms.TrackBar();
             this.musicBox4 = new System.Windows.Forms.GroupBox();
             this.pausebutton4 = new System.Windows.Forms.Button();
             this.stopButton4 = new System.Windows.Forms.Button();
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.progressBar4 = new System.Windows.Forms.TrackBar();
             this.musicBox3 = new System.Windows.Forms.GroupBox();
             this.pausebutton3 = new System.Windows.Forms.Button();
             this.stopButton3 = new System.Windows.Forms.Button();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.progressBar3 = new System.Windows.Forms.TrackBar();
             this.musicBox2 = new System.Windows.Forms.GroupBox();
             this.pausebutton2 = new System.Windows.Forms.Button();
             this.stopButton2 = new System.Windows.Forms.Button();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.progressBar2 = new System.Windows.Forms.TrackBar();
             this.randomBox = new System.Windows.Forms.GroupBox();
             this.randomSaveButton = new System.Windows.Forms.Button();
             this.randomDescBox = new System.Windows.Forms.TextBox();
@@ -69,11 +73,7 @@
             this.notesBox = new System.Windows.Forms.GroupBox();
             this.notesPictureBox = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.notes = new System.Windows.Forms.TextBox();
-            this.progressBar2 = new System.Windows.Forms.TrackBar();
-            this.progressBar3 = new System.Windows.Forms.TrackBar();
-            this.progressBar4 = new System.Windows.Forms.TrackBar();
-            this.progressBar5 = new System.Windows.Forms.TrackBar();
+            this.notes = new System.Windows.Forms.RichTextBox();
             this.menuStrip1.SuspendLayout();
             this.musicBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.progressBar1)).BeginInit();
@@ -81,19 +81,19 @@
             this.panel1.SuspendLayout();
             this.musicBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressBar5)).BeginInit();
             this.musicBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressBar4)).BeginInit();
             this.musicBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressBar3)).BeginInit();
             this.musicBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressBar2)).BeginInit();
             this.randomBox.SuspendLayout();
             this.notesBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.notesPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressBar2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressBar3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressBar4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressBar5)).BeginInit();
             this.SuspendLayout();
             // 
             // treeView1
@@ -265,6 +265,14 @@
             0,
             0});
             // 
+            // progressBar5
+            // 
+            this.progressBar5.Location = new System.Drawing.Point(6, 38);
+            this.progressBar5.Maximum = 500;
+            this.progressBar5.Name = "progressBar5";
+            this.progressBar5.Size = new System.Drawing.Size(207, 45);
+            this.progressBar5.TabIndex = 6;
+            // 
             // musicBox4
             // 
             this.musicBox4.Controls.Add(this.pausebutton4);
@@ -309,6 +317,14 @@
             0,
             0,
             0});
+            // 
+            // progressBar4
+            // 
+            this.progressBar4.Location = new System.Drawing.Point(6, 38);
+            this.progressBar4.Maximum = 500;
+            this.progressBar4.Name = "progressBar4";
+            this.progressBar4.Size = new System.Drawing.Size(207, 45);
+            this.progressBar4.TabIndex = 6;
             // 
             // musicBox3
             // 
@@ -355,6 +371,14 @@
             0,
             0});
             // 
+            // progressBar3
+            // 
+            this.progressBar3.Location = new System.Drawing.Point(6, 38);
+            this.progressBar3.Maximum = 500;
+            this.progressBar3.Name = "progressBar3";
+            this.progressBar3.Size = new System.Drawing.Size(207, 45);
+            this.progressBar3.TabIndex = 6;
+            // 
             // musicBox2
             // 
             this.musicBox2.Controls.Add(this.pausebutton2);
@@ -399,6 +423,14 @@
             0,
             0,
             0});
+            // 
+            // progressBar2
+            // 
+            this.progressBar2.Location = new System.Drawing.Point(6, 38);
+            this.progressBar2.Maximum = 500;
+            this.progressBar2.Name = "progressBar2";
+            this.progressBar2.Size = new System.Drawing.Size(207, 45);
+            this.progressBar2.TabIndex = 6;
             // 
             // randomBox
             // 
@@ -474,9 +506,9 @@
             // 
             // notesBox
             // 
+            this.notesBox.Controls.Add(this.notes);
             this.notesBox.Controls.Add(this.notesPictureBox);
             this.notesBox.Controls.Add(this.button1);
-            this.notesBox.Controls.Add(this.notes);
             this.notesBox.Location = new System.Drawing.Point(193, 27);
             this.notesBox.Name = "notesBox";
             this.notesBox.Size = new System.Drawing.Size(546, 564);
@@ -507,43 +539,10 @@
             // notes
             // 
             this.notes.Location = new System.Drawing.Point(6, 19);
-            this.notes.Multiline = true;
             this.notes.Name = "notes";
-            this.notes.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.notes.Size = new System.Drawing.Size(408, 539);
-            this.notes.TabIndex = 1;
-            // 
-            // progressBar2
-            // 
-            this.progressBar2.Location = new System.Drawing.Point(6, 38);
-            this.progressBar2.Maximum = 500;
-            this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(207, 45);
-            this.progressBar2.TabIndex = 6;
-            // 
-            // progressBar3
-            // 
-            this.progressBar3.Location = new System.Drawing.Point(6, 38);
-            this.progressBar3.Maximum = 500;
-            this.progressBar3.Name = "progressBar3";
-            this.progressBar3.Size = new System.Drawing.Size(207, 45);
-            this.progressBar3.TabIndex = 6;
-            // 
-            // progressBar4
-            // 
-            this.progressBar4.Location = new System.Drawing.Point(6, 38);
-            this.progressBar4.Maximum = 500;
-            this.progressBar4.Name = "progressBar4";
-            this.progressBar4.Size = new System.Drawing.Size(207, 45);
-            this.progressBar4.TabIndex = 6;
-            // 
-            // progressBar5
-            // 
-            this.progressBar5.Location = new System.Drawing.Point(6, 38);
-            this.progressBar5.Maximum = 500;
-            this.progressBar5.Name = "progressBar5";
-            this.progressBar5.Size = new System.Drawing.Size(207, 45);
-            this.progressBar5.TabIndex = 6;
+            this.notes.TabIndex = 5;
+            this.notes.Text = "";
             // 
             // MainForm
             // 
@@ -568,24 +567,23 @@
             this.musicBox5.ResumeLayout(false);
             this.musicBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressBar5)).EndInit();
             this.musicBox4.ResumeLayout(false);
             this.musicBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressBar4)).EndInit();
             this.musicBox3.ResumeLayout(false);
             this.musicBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressBar3)).EndInit();
             this.musicBox2.ResumeLayout(false);
             this.musicBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.progressBar2)).EndInit();
             this.randomBox.ResumeLayout(false);
             this.randomBox.PerformLayout();
             this.notesBox.ResumeLayout(false);
-            this.notesBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.notesPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressBar2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressBar3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressBar4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.progressBar5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -633,11 +631,11 @@
         private System.Windows.Forms.GroupBox notesBox;
         private System.Windows.Forms.PictureBox notesPictureBox;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox notes;
         private System.Windows.Forms.TrackBar progressBar1;
         private System.Windows.Forms.TrackBar progressBar5;
         private System.Windows.Forms.TrackBar progressBar4;
         private System.Windows.Forms.TrackBar progressBar3;
         private System.Windows.Forms.TrackBar progressBar2;
+        private System.Windows.Forms.RichTextBox notes;
     }
 }

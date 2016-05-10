@@ -1,0 +1,42 @@
+APPROACH
+Located along the coast, this site is most easily reached by air or ocean. The route overland is significantly more treacherous,
+ passing through a perilous tract of jungle teeming with drow, yuan-ti, giants, and more dangerous creatures. Closer to the port, the ground in the lowlands becomes swampy, with large pools of standing water and thick mud.
+
+A party close by the ruined harbor might see the faint purple glow of its lighthouse.
+
+"Nestled in the crook of a natural bay stands a mass of a huge crumbling buildings and a shattered dock. A wooden mast stands above choppy water, betraying the location of a sunken vessel. A rocky island at the edge of the bay supports a slender stone lighthouse, weathered and cracked."
+
+TERRAIN FEATURES
+The lowland ground near the ruins is a swampy morass of mud and stagnant pools, and severe thunderstorms are frequent in the area. These storms last 2d4 hours and strike every 1d6 days.
+
+LOCATIONS
+
+SWAMPY GROUND
+This area was once the main throughfare for the small harbor community. Large paving stones are visible here and there through the muck, covered in slime and moss where they stick up at odd angles.
+
+STORAGE BUILDING
+Still mostly intact, this 30-ft tall building is covered in thick vines and other plants that thrive on its walls and across its broad, flat roof. The stone door to the building is not locked, but cannot be opened until the foliage covering it is cut away.
+Inside are a number of stone containers holding thick hempen rope coils, musty leather sails, and petrified wood planks. All have survived the long centuries as a result of lingering magic in the area.
+
+RUINED STRUCTURE
+This enormous structure was a lodge hall for giant sailors. A large pile of rubble takes up the southwest corner, where the walls and a portion of the roof have collapsed. Inside, shattered stone benches are strewn about the room. A large hole in the center of the floor is full of water and connects to the harbor outside. Numerous gouges and cracks leading to the hole suggest some sort of struggle here - almost as if creatures in the room fought being dragged into the water.
+
+GIANT STATUE
+Not far from the water's edge is the statue of a giant sailor, completely covered in vines and mossy growth. Though pocked and cracked beneath the vegetation, the statue is relatively intact. The giant sailor bears a shield and cutlass, magically intact.
+
+SHATTERED DOCK
+A shattered stone dock lies partially tipped into the water, still attached to one piling. Corroded mooring points can still be seen on some of the other pilings, but they are of crude design.
+
+LOOKOUT
+A path leads to the north, away from the muck and the beach, climbing 30 ft to a simple stone platform. The giants used this area as a lookout because of its clear view of the open waters beyond the harbor. Two stone pillars appear to have once held a covering to protect lookouts from the sun and rain. Partially obscured by some rubble, there is a runestone that has come loose from a collapsed pillar. Anyone tracing a finger across the rune gains the ability to closely view any location in sight. The rune's magic has decayed over centuries, and it has a 1 in 6 chance to deplete after each use. The effect lasts for 1 minute, and must be used in 1 hour of tracing the rune.
+
+TIDAL WALL
+To prevent serious damage during heavy storms, the giants constructed a wall to seal off the northern end of the harbor and block most tides. Since its construction, the tidal wall has decayed and fallen in places. This wall also served as a walkway to the lighthouse, but it is no longer passable.
+
+BAY
+Only 15 ft from shore, this bays depth plunges to almost 80ft. The waters are choppy and difficult to swim in. Just off the end of the ruined dock is the mast of a sunken ship, the recent wreck of an explorer's vessel. While not a danger to swimmers, the wreck makes the area dangerous to other boats that might enter the harbor. Craft that get too close risk damaging their hulls.
+
+LIGHTHOUSE
+This tall stone tower rises almost 80ft above the water, and like many of the other structures in the harbor, it is covered in vines and moss. The dock is stuck fast, but not locked. Inside, crumbling stairs lead up to a small deck high above, where a weathered piece of quartz sits on a rusting iron stand.
+Climbing the giant stairs is difficult for non-giants, with the risk of falling down. At night, the lighthouse beacon activates 50% of the time, bathing the entire harbor in a faint purple light. If removed, the quartz can be sold, but its magic no longer functions.
+
