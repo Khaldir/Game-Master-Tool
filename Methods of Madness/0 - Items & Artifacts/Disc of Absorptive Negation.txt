@@ -1,0 +1,30 @@
+This handheld disk absorbs the power of a recently dispelled
+spell, storing its magical energy until you release it in a spell
+of your own.
+
+Lore 
+The runes around the edge of the disc are similar to the Giant alphabet, but they aren't specific letters
+The ancient giants sometimes used golden discs to make their spells stronger.
+One of the most common discs has a Siberys dragonshard within it that absorbs spell energy.
+
+Description
+This golden disc about five inches across has a single clear Siberys dragonshard set within it, slightly off center. The dragonshard is large enough that it pierces the disccompletely and is visible from both sides. Mystic symbols are engraved around the edge of the disc.
+Once the disc has absorbed spells, a minuscule, whirling cloud is visible within the dragonshard. The darker the cloud, the more spell energy the disc has.
+
+Prerequisite
+A disc of absorptive negation functions only for spellcasters. It's most effective in the hands of a spellcaster capable of casting dispel magic.
+
+Activation
+To absorb a spell into a disc of absorptive negation, hold it in your hand as you cast dispel magic or greater dispel magic. No action is required, other than the action you take casting the spell.
+To use the spell power stored within the disc, hold it your hand as you cast the spell normally.
+Once you�ve used the spell power within the disc, the dragonshard shatters. The golden disc itself is worth 50 gp. If you don't use the absorbed spell power within 24 hours, it dissipates harmlessly.
+
+Effect
+When you cast dispel magic or greater dispel magic with a disc of absorptive negation in hand, the disc absorbs the magic energy from the dispelled spell. If you dispel more than one spell with a single casting of dispel magic or greater dispel magic, the energy from the highest-level spell goes into the disc. Each disc absorbs the energy from only one spell, whether it's a 1st-level spell or a 9th-level spell.
+Anytime within the next 24 hours, you can use the stored spell energy within the disc to cast any single spell you have prepared or know, without expending any spell slots to do so. The levels of spell energy stored in the disc must be equal to or greater than the level of the spell the wielder wants to cast, any material components required for the spell must be present, and the disc must be in hand when casting. The dragonshard within the disc shatters when you call on its energy.
+
+A disc of absorptive negation is a flexible tool, but it absorbs only one spell and provides stored energy for only one spell. Unlike with a rod of absorption, you can't split up the stored spell levels. For example, if you dispel a hallow spell, your disc has fi ve spell levels within it. Later that day, you can call on the energy within the discto cast a 4th-level enervation spell you have prepared without using any of your own spell slots. Once you cast the spell, the dragonshard within the disc shatters and the remaining spell level within the discis lost.
+
+Weight: 1 lb.
+Price: 4,000 gp.
+

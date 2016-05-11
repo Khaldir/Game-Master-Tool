@@ -1,0 +1,14 @@
+Life rings slow the fall up to four people, allowing them to safely exit an airship in an emergency. 
+
+Description
+A life ring is a simple wooden hoop about 3 feet in diameter and 4 inches thick. Four equally spaced handholds are formed where the wood flattens slightly. A piece of thin twine crosses the middle of the ring.  
+
+Activation
+In order to activate a life ring, you must cut the twine crossing the hoop. Just 1 point of piercing or slashing damage does the trick. Once cut, the ring becomes active for 8 rounds, after which it becomes nonmagical.
+
+Effect
+A life ring bestows a feather fall effect on up to four creatures grasping it. Creatures do not need to be touching the ring when it is activated. Often, a crew member with a dagger will cut the twine on each of the ship's life rings, passing them out in turn to passengers wishing to escape.
+
+Weight: 5 lb.
+Price: 400 gp.
+
