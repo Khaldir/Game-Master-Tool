@@ -1,0 +1,326 @@
+Adhesion
+Level: 1d6; Effect: Allows for automatic climbing of any surface, even horizontal ones. Lasts 20 mins.
+Age Taker
+Level: 1d6+4; Effect: Removes years from the wearer's physiological age. Over 7 days, the wearer sheds a number of years equal to 3x cypher’s level, limited to age 23.
+Analeptic
+Level: 1d6+2; Effect: Restores a number of points equal to the level to the user's Speed Pool.
+Antivenom
+Level: 1d6+2; Effect: Renders user immune to poisons of the same level or lower (Also ends any ongoing effects already in user’s system).
+Armour Reinforcer
+Level: 1d6+1; Effect: The user's Armour gains an enhancement: [d6] ({1} +1 to Armor; {2} +2 to Armor; [3} +3 to Armor; {4} +2 to Armor & + 5 fire resist;  {5} +2 to Armor & + 5 cold resist; {6} +2 to Armor & + 5 acid resist).
+Attractor
+Level: 1d6+4; Effect: One unanchored item your size or smaller within long range is drawn to the user. Takes one round. The item has no momentum when it arrives.
+Banishing
+Level: 1d6; Effect: For the next 24 hours, each time you strike a solid creature or object in melee, a burst of energy teleports it an immediate distance in a random direction. The difficulty of a teleported creature’s actions is detrimented by one step on its turn.
+Blackout
+Level: 1d6+2; Effect: An area within immediate range of the user becomes secure against any effect outside the area that sees, hears or otherwise senses what occurs inside. To outside observers, the area is a blur. Taps, scrying sensors, and other direct feed surveillance methods are rendered inoperative within the area for 24 hours. 
+Blinking
+Level: 1d6; Effect: For the next 24 hours, each time the user is damaged, they teleport an immediate distance in a random direction, lowering the difficulty of your defence roll for one round after you teleport.
+Catholicon
+Level: 1d6+2; Effect: Cures any disease of the same level or lower.
+Chemical Factory
+Level: 1d6; Effect: After 1 hour, the sweat of the user produces 1d6 doses of a valuable liquid, which must be used within a week. [d100] ({01-04} Euphoric for 1d6 hours; {05-08} Hallucinogenic for 1d6 hours; {09-12} Stimulant for 1d6 hours; {13-16} Depressant for 1d6 hours; {17-20} Nutrient supplement; {21-25} Antivenom; {26-30} Cures disease; {31-35} See in the dark for one hour; {36-45} Restores a number of Might Pool points equal to cypher level; {46-55} Restores a number of Speed Pool points equal to cypher level; {56-65} Restores a number of Intellect Pool points equal to cypher level; {66-75} Increases Might Edge by 1 for one hour; {76-85} Increases Speed Edge by 1 for one hour; {86-95} Increases Intellect Edge by 1 for one hour; {96-00} Restores all Pools to full).
+Comprehension
+Level: 1d6+1; Effect: Within 5 mins, the user can understand the words of a preset language. This effect is permanent.
+Best Tool
+Level: 1d6; Effect: Provides an additional asset for any one task using a tool, even if it exceeds the 2 asset limit.
+Burst of Speed
+Level: 1d6; Effect: For 1 min, a user that usually moves a short distance moves a long distance instead.
+Disarm
+Level: 1d6+1; Effect: One NPC of a level lower than the cypher within immediate range drops whatever they are holding.
+Perfection
+Level: 1d6+2; Effect: You get the result of having rolled a 20 on your next action. 
+Repel
+Level: 1d6+1; Effect: One NPC of a level lower than the cypher within immediate range decides to leave, using his next 5 rounds to move away quickly.
+Condition Remover
+Level: 1d6+3; Effect: Cures one occurrence of a specific health condition. [d20] ({1} Addiction to one substance; {2} Autoimmune disease; {3} Bacterial infection; {4} Bad breath; {5} Blisters; {6} Bloating; {7} Cancer; {8} Chapped lips; {9} Flatus; {10} Heartburn; {11} Hiccups; {12} Ingrown hairs; {13} Insomnia; {14} Joint problem; {15} Muscle cramp; {16} Pimples; {17} Psychosis; {18} Stiff neck; {19} Viral infection; {20} Hangover)
+Contingent Activator
+Level: 1d6+2; Effect: If the device is activated in conjunction with another cypher, the user can specify a condition in which the linked cypher will activate. The linked cypher retains the contingent until it is used.
+Controlled Blinking
+Level: 1d6+2; Effect: For the next 24 hours, each time the user is damaged, they teleport to a spot they desire within immediate range, lowering the difficulty of your defence rolls for one round.
+Curative
+Level: 1d6+2; Effect: Restores a number of points equal to the level to the user's Might pool.
+Curse Bringer
+Level: 1d6+1; Effect: The curse bringer can be activated when given to an individual who doesn't recognise its significance. The next time the victim attempts an important task when the cypher is in their possession, the difficulty of the task is made harder by 3 steps.
+Darksight
+Level: 1d6; Effect: grants the ability to see in the dark for 8 hours.
+Death Bringer
+Level: 1d6; Effect: For the next minute, when the user strikes an NPC or creature whose level is less than or equal to the cypher's level, they can choose to make a second attack roll, killing the target on a success.
+Density
+Level: 1d6; Effect: For the next 24 hours, each time you strike a solid creature or object with a weapon, the weapon suddenly increases dramatically in weight, dealing 2 extra damage.
+Detonation
+Level: 1d6+2; Effect: Projects a small physical explosive up to a long distance away that explodes in an immediate radius, inflicting damage equal to the level. [d100] ({0-10} Cell-Disrupting; {11-30} Corrosive; {31-40} Electrical; {41-50} Cold; {51-75} Fire; {76-00} Shrapnel)
+Detonation (Creature)
+Level: 1d6+1; Effect: Projects a small physical explosive up to a long distance away that explodes and creates a momentary teleportation gate. A random creature whose level is equal to or less than the cypher's level appears through the gate and attacks the closest target.
+Detonation (Desiccating)
+Level: 1d6+2; Effect: Projects a small physical explosive up to a long distance away that bursts in an immediate radius, draining moisture from everything within it. Living creatures take damage equal to the cypher’s level. Water in the area is vaporized. 
+Detonation (Flash)
+Level: 1d6+2; Effect: Projects a small physical explosive up to a long distance away that bursts in an immediate radius, blinding all within it for one minute. 
+Detonation (Gravity)
+Level: 1d6+2; Effect: Projects a small physical explosive up to a long distance away that bursts in an immediate radius, inflicting damage equal to the cypher’s level by increasing gravity tremendously for one second. All creatures in the area are crushed to the ground for one round and cannot take physical actions. 
+Detonation (Gravity Inversion)
+Level: 1d6+1; Effect: Projects a small physical explosive up to a long distance away that explodes, and for one hour gravity reverses within long range of the explosion. 
+Detonation (Massive)
+Level: 1d6+2; Effect: Projects a small physical explosive up to a long distance away that explodes in a short-range radius, inflicting damage equal to the cypher’s level. [d100] ({0-10} Cell-Disrupting; {11-30} Corrosive; {31-40} Electrical; {41-50} Cold; {51-75} Fire; {76-00} Shrapnel)
+Detonation (Matter Disruption)
+Level: 1d6+4; Effect: Projects a small physical explosive up to a long distance away that explodes in an immediate radius, releasing nanites that rearrange matter in random ways. Inflicts damage equal to the cypher’s level. 
+Detonation (Pressure)
+Level: 1d6+2; Effect: Projects a small physical explosive up to a long distance away that explodes in an immediate radius, inflicting impact damage equal to the cypher’s level. Also moves unattended objects out of the area if they weigh less than 20 pounds (9 kg) per cypher level. 
+Detonation (Singularity)
+Level: 10; Effect: Projects a small physical explosive up to a long distance away that explodes and creates a momentary singularity that tears at the fabric of the universe. Inflicts 20 points of damage to all within short range, drawing them (or their remains) together to immediate range (if possible). Player characters in the radius who fail a Might defence roll move down one step on the damage track. 
+Detonation (Sonic)
+Level: 1d6+2; Effect: Projects a small physical explosive up to a long distance away that explodes with terrifying sound, deafening all in an immediate radius. 
+Detonation (Spawn)
+Level: 1d6+2; Effect: Projects a small physical explosive up to a long distance away that bursts in an immediate radius, blinding all within it for one minute and inflicting damage equal to the cypher’s level. The burst spawns 1d6 additional detonations; in the next round, each additional detonation flies to a random spot within short range and explodes in an immediate radius. [d100] ({0-10} Cell-Disrupting; {11-30} Corrosive; {31-40} Electrical; {41-50} Cold; {51-75} Fire; {76-00} Shrapnel)
+Detonation (Web)
+Level: 1d6+2; Effect: Projects a small physical explosive up to a long distance away that explodes in an immediate radius and creates sticky strands of goo. PCs caught in the area must use a Might-based action to get out, with the difficulty determined by the cypher level. NPCs break free if their level is higher than the cypher level.
+Disguise Module
+Level: 1d6 + 2; Effect: For the next hour, the user’s features become almost identical to those of one designated person they have previously interacted with. This lowers the difficulty by two steps when the user attempts to disguise themselves as the designated person.  Once designated, the user cannot shift the effect to look like another person, though they can remove the module to look like themselves before the end of the hour.
+Disrupting
+Level: 1d6; Effect: For the next 24 hours, each time you strike a solid creature or object, you generate a burst of nanites that directly attack its organic cells.  The target takes 1 additional point of damage and loses its next action.
+Eagleseye
+Level: 1d6; Effect: Grants the ability to see 10x as far as normal for one hour.
+Effect Resistance
+Level: 1d6 + 1; Effect: Provides a chance for additional resistance to directly damaging effects of all kinds for a day. (It does not provide resistance to blunt force, slashing, or piercing attacks.) If the level of the effect is less than or equal to the level of the cypher, the user gains an additional defence roll to avoid it. On a successful defence roll, treat the attack as if the user had succeeded on his regular defence roll.
+Effort Enhancer
+Level: 1d6; Effect: The user can apply one level of Effort to a noncombat task without spending points from a Pool. The level of Effort provided by this cypher does not count toward the maximum amount of Effort a character can normally apply to one task.
+Effort Enhancer (Combat)
+Level: 1d6 + 1; Effect: For the next hour, the user can apply one level of Effort to any task (including a combat task) without spending points from a Pool. The level of Effort provided by this cypher does not count toward the maximum amount of Effort a character can normally apply to one task.
+Enduring Shield
+Level: 1d6 + 4; Effect: For the next day, the user has an asset to Speed defence rolls.
+Equipment Cache
+Level: 1d6 + 1; Effect: The user can produce from the cypher a desired piece of equipment (not an artifact) whose level does not exceed the cypher’s level. The piece of equipment persists for up to 24 hours, unless its fundamental nature allows only a single use (such as with a grenade).
+Farsight
+Level: 1d6 + 1; Effect: The user can observe a location they have visited previously, regardless of how far away it is (even across galaxies). This vision persists for up to ten minutes.
+Fireproofing
+Level: 1d6 + 4; Effect: A non-living object treated by this cypher has Armour against fire damage equal to the cypher’s level for twenty-four hours.
+Flame-Retardant Wall
+Level: 1d6; Effect: Creates an immobile plane of permeable energy up to 20 feet by 20 feet (6 m by 6 m) for one hour. The plane conforms to the space available. Flames passing through the plane are extinguished.
+Force Cube
+Level: 1d6 + 3; Effect: Creates an immobile cube composed of six planes of solid force, each 30 feet (9 m) to a side, for one hour. The planes conform to the space available.
+Force Field
+Level: 1d6; Effect: For the next twenty-four hours, the user is surrounded by a powerful force field, granting +2 to Armor.
+Force Screen Projector
+Level: 1d6 + 3; Effect: Creates an immobile plane of solid force up to 20 feet by 20 feet (6 m by 6 m) for one hour. The plane conforms to the space available.
+Force Shield Projector
+Level: 1d6 + 3; Effect: Creates a shimmering energy shield around the user for one hour, during which time they gain +3 to Armor (or +4 to Armor if the cypher is level 5 or higher).
+Friction Reducer
+Level: 1d6; Effect: Spread across an area up to 10 feet (3 m) square, this makes things extremely slippery. For one hour, the difficulty of movement tasks in the area is increased by three steps.
+Frigid Wall
+Level: 1d6 + 2; Effect: Creates a wall of super-cooled air up to 30 feet by 30 feet by 1 foot (9 m by 9 m by 30 cm) that inflicts damage equal to the cypher’s level on anything that passes through it. The wall conforms to the space available. It lasts for ten minutes.
+Gas Bomb
+Level: 1d6 + 2; Effect: Thrown a short distance, this bursts in a poisonous cloud within an immediate area. The cloud lingers for 1d6 rounds unless conditions dictate otherwise. [d100] ({01-10} Thick smoke; {11-20} Choking gas: lose actions for rounds equal to the cypher’s level; {21-50} Poison gas: suffer damage equal to the cypher’s level; {51-60} Corrosive gas: suffers damage equal to the cypher’s level; {61-65} Hallucinogenic gas: lose actions for rounds equal to the cypher’s level; {66-70} Nerve gas: suffer Speed damage equal to the cypher’s level; {71-80} Mind-numbing gas: suffer Intellect damage equal to the cypher’s level; {81–83} Fear gas: flee in a random direction (or are paralyzed) for rounds equal to the cypher’s level; {84-86} Amnesia gas: permanently lose all memory of the last minute; {87-96} Sleep gas: fall asleep for rounds equal to the cypher’s level; {97-00} Rage gas: make a melee attack on the nearest creature for rounds equal to the cypher’s level.)
+Gravity Nullifier
+Level: 1d6 + 3; Effect: For one hour, the user can float into the air, moving vertically up to a short distance per round, the user must weigh less than 50 pounds (23 kg) per level of the cypher.
+Gravity-Nullifying Application
+Level: 1d6 + 2; Effect: If a non-living object no larger than a person is coated by this cypher, it floats 1d20 feet in the air permanently and no longer has weight if carried (though it needs to be strapped down).
+Heat Attack
+Level: 1d6; Effect: For the next twenty-four hours, each time you strike a solid creature or object, you generate a burst of heat that inflicts 2 additional points of damage.
+Hunter/Seeker
+Level: 1d6; Effect: With long-range movement, this missile tracks and attacks a specified target, which must be within sight when selected. If it misses, it continues to attack one additional time per cypher level until it hits. [d100] ({01-50} Inflicts 8 points of damage; {51-80} Bears a poisoned needle that inflicts 3 points of damage plus poison; {81-90} Explodes, inflicting 6 points of damage to all within immediate range; {91-95} Shocks for 4 points of electricity damage, and stuns for one round per cypher level; {96-00} Covers target in sticky goo that immediately hardens, holding them fast until they break free with a Might action (difficulty equal to the cypher’s level + 2).
+Image Projector
+Level: 1d6; Effect: Projects one of the following immobile images in the area described for one hour. The image appears 25 feet (8 m) away from the user. Scenes include movement, sound, and smell. [d100] ({01-20} Terrifying creature of an unknown species (10-foot [3 m] cube); {21-40} Huge machine that obscures sight (30-foot [9 m] cube); {41-50} Beautiful pastoral scene (50-foot [15 m] cube); {51-60} Food that looks delicious but may not be familiar (10-foot [3 m] cube); {61-80} Solid colour that obscures sight (50-foot [15 m] cube); {81-00} Incomprehensible scene that is disorienting and strange (20-foot [6 m] cube)
+Inferno Wall
+Level: 1d6 + 2; Effect: Creates a wall of extreme heat up to 30 feet by 30 feet by 1 foot (9 m by 9 m by 30 cm) that inflicts damage equal to the cypher’s level on anything that passes through it. The wall conforms to the space available. It lasts for ten minutes.
+Infiltrator
+Level: 1d6; Effect: Tiny capsule launches and moves at great speed, mapping and scanning an unknown area. It moves 500 feet (152 m) per level, scanning an area up to 50 feet (15 m) per level away from it. It identifies basic layout, creatures, and major energy sources. Its movement is blocked by any physical or energy barrier.
+Information Sensor
+Level: 1d6 + 2; Effect: Over the course of one day, the user can activate the cypher a total number of times equal to its level. Each time, they can select a living creature within long range and learn the following about it:  level, origin, species, name, and possibly other facts (such as an individual’s credit score, home address, phone number, and related information).
+Instant Servant
+Level: 1d6; Effect: Small device expands into a humanoid automaton that is roughly 2 feet (60 cm) tall. Its level is equal to the cypher’s level, and it can understand the verbal commands of the character who activated it. Commanding the servant is not an action. It can make attacks or perform actions as ordered to the best of its abilities, but it cannot speak.  The automaton has short-range movement but never goes farther than long range away from the character who activated it. At the GM’s discretion, the servant might have specialized knowledge, such as how to operate a particular device.  Otherwise, it has no special knowledge.  In any case, the servant is not artificially intelligent or capable of initiating action.  It does only as commanded.  The servant operates for one hour per cypher level.
+Instant Shelter
+Level: 1d6 + 3; Effect: With the addition of water and air, this expands into a simple one-room structure with a door and a transparent window. The structure is 10 feet by 10 feet by 20 feet (3 m by 3 m by 6 m). It is permanent and immobile once created.
+Intellect Booster
+Level: 1d6 + 2; Effect: Adds 1 to the user’s Intellect Edge for one hour.
+Intelligence Enhancement
+Level: 1d6; Effect: The difficulty of any task involving intelligent deduction—such as playing chess, inferring a connection between clues, solving a mathematical problem, finding a bug in computer code, and so on—is decreased by two steps for the user for one hour. In the subsequent hour, the strain increases the difficulty for the same tasks by two steps.
+Knowledge Enhancement
+Level: 1d6; Effect: For the next twenty-four hours, the character has training in a predetermined skill. [d100] ({01-10} Melee attacks; {11-20} Ranged attacks; {21-40} One type of academic or esoteric lore; {41-50} Repairing (sometimes specific to one device); {51-60} Crafting (usually specific to one thing); {61-70} Persuasion; {71-75} Healing; {76-80} Speed defence; {81-85} Intellect defence; {85-90} Swimming; {91-95} Riding; {96-00} Sneaking.)
+Lightning Wall
+Level: 1d6 + 2; Effect: Creates a wall of electric bolts up to 30 feet by 30 feet by 1 foot (9 m by 9 m by 30 cm) that inflicts damage equal to the cypher’s level on anything that passes through it. The wall conforms to the space available. It lasts for ten minutes.
+Machine Control
+Level: 1d6 + 2; Effect: Splits into two pieces; one is affixed to a device and the other to a character.  The character can then use their mind to control the device at long range, bidding it to do anything it could do normally.  Thus, a device could be activated or deactivated, and a vehicle could be piloted. The control lasts for ten minutes, and once the device is chosen, it cannot be changed.
+Magnetic Attack Drill
+Level: 1d6 + 2; Effect: The user throws this cypher at a target within short range, and it drills into the target for one round, inflicting damage equal to the cypher’s level. If the target is made of metal or wearing metal (such as armour), the difficulty of the attack is decreased by one step.
+Magnetic Master
+Level: 1d6 + 2; Effect: Establishes a connection with one metal object within short range that a human could hold in one hand. The user can then move or manipulate the object anywhere within short range (each movement or manipulation is an action). The connection lasts for ten rounds.
+Magnetic Shield
+Level: 1d6 + 2; Effect: For ten minutes, metal objects cannot come within immediate range of the user. Metal items already in the area when the device is activated are slowly pushed out.
+Manipulation Beam
+Level: 1d6 + 2; Effect: Over the course of one day, the user can activate the cypher a total number of times equal to its level. Each time, they can affect an object they can see within long range that is not too heavy for them to affect physically. The effect must occur over the course of a round.
+Matter Transference Ray
+Level: 1d6 + 3; Effect: The user can target one non-living object within long range that is their size or smaller and whose level is less than or equal to the cypher’s level. The object is transferred directly to a random location at least 100 miles (161 km) away. If the GM feels it appropriate to the circumstances, only a portion of an object is transferred (a portion whose volume is no more than the user’s).
+Meditation Aid
+Level: 1d6 + 2; Effect: Restores a number of points equal to the cypher’s level to the user’s Intellect Pool.
+Memory Switch
+Level: 1d6 + 2; Effect: The user selects a point within long range, and the minds of all thinking creatures within immediate range of that point are attacked. Victims are dazed and take no action for a round, and they have no memory of the preceding hour.
+Mental Scrambler
+Level: 1d6 + 2; Effect: Two rounds after being activated, the device creates an invisible field that fills an area within short range and lasts for one minute. The field scrambles the mental processes of all thinking creatures. The effect lasts as long as they remain in the field and for 1d6 rounds after, although an Intellect defence roll is allowed each round to act normally (both in the field and after leaving it). [d100] ({01-30} Victims cannot act; {31-40} Victims cannot speak; {41-50} Victims move slowly (immediate range) and clumsily; {51-60} Victims cannot see or hear; {61-70} Victims lose all sense of direction, depth, and proportion; {71-80} Victims do not recognize anyone they know; {81-88} Victims suffer partial amnesia; {89-94} Victims suffer total amnesia; {95-98} Victims lose all inhibitions, revealing secrets and performing surprising actions; {99-00} Victims’ ethics are inverted.)
+Metal Death
+Level: 1d6 + 2; Effect: Produces a stream of foam that covers an area about 3 feet by 3 feet (1 m by 1 m), transforming any metal that it touches into a substance as brittle as thin glass. The foam affects metal to a depth of about 6 inches (15 cm).
+Mind Meld
+Level: 1d6 + 1; Effect: Lets the user speak telepathically with creatures they can see within short range for up to one hour. The user can’t read a target’s thoughts, except those that are specifically “transmitted.” This effect transcends normal language barriers, but a target must have a mind that allows for such communication to be possible.
+Mind-Restricting Wall
+Level: 1d6 + 2; Effect: Creates an immobile plane of permeable energy up to 20 feet by 20 feet (6 m by 6 m) for one hour. The plane conforms to the space available. Intelligent creatures passing through the plane fall unconscious for up to one hour, or until slapped awake or damaged.
+Mind Stabilizer
+Level: 1d6; Effect: The user gains +5 to Armour against Intellect damage.
+Monoblade
+Level: 1d6 + 2; Effect: Produces a 6-inch (15 cm) blade that’s the same level as the cypher. The blade cuts through any material of a level lower than its own. If used as a weapon, it is a light weapon that ignores Armour of a level lower than its own. The blade lasts for ten minutes.
+Monohorn
+Level: 1d6 + 3; Effect: The user gains a horn in the centre of their forehead. The horn is deadly sharp and strong, and it spirals down to a solid base where it fuses with their flesh and bone. The user is specialized in making melee attacks with the horn, which is considered a medium weapon.  The horn lasts for a number of hours equal to the cypher’s level.
+Motion Sensor
+Level: 1d6 + 2; Effect: For one hour, this cypher indicates when any movement occurs within short range, and when large creatures or objects move within long range (the cypher distinguishes between the two). It also indicates the number and size of the creatures or objects in motion.
+Null Field
+Level: 1d6 + 3; Effect: The user and all creatures within immediate range gain +5 to Armor against damage of a specified kind for one hour. [d100] ({01-12} Fire; {13-27} Cold; {28-39} Acid; {40-52} Psychic; {53-65} Sonic; {66-72} Electrical; {73-84} Poison; {85-95} Blunt force; {96-00} Slashing and piercing.)
+Nullification Ray
+Level: 1d6 + 3; Effect: The user can immediately end one ongoing effect within long range that is produced by an artifact, cypher, or special ability.
+Nutrition and Hydration
+Level: 1d6 + 1; Effect: The user can go without food and water for a number of days equal to the cypher’s level without ill effect.
+Perfect Memory
+Level: 1d6; Effect: Allows the user to mentally record everything they see for thirty seconds and store the recording permanently.
+Personal Environment Field
+Level: 1d6 + 2; Effect: Creates an aura of temperature and atmosphere that will sustain a human safely for twenty-four hours. The aura extends to 1 foot (30 cm) around the user. It does not protect against sudden flashes of temperature change (such as from a heat ray). A small number of these cyphers (1%) accommodate the preferred environment of a non-human, non-terrestrial creature.
+Phase Changer
+Level: 1d6 + 1; Effect: Puts the user out of phase for one minute. During this time, they can pass through solid objects as though they were entirely insubstantial. They cannot make physical attacks or be physically attacked.
+Phase Disruptor
+Level: 1d6 + 2; Effect: Puts a portion of a physical structure out of phase for one hour. It affects an area equal to a 10-foot (3 m) cube. While the area is out of phase, creatures and objects can pass through it as if it were not there, although one cannot see through it, and it blocks light.
+Poison (Emotion)
+Level: 1d6 + 2; Effect: The victim feels a specific emotion for one hour. [d100] ({01-20} Anger. Likely to attack anyone who disagrees with him. Very hard to interact with; the difficulty of all such actions is increased by two steps; {21-40} Fear. Flees in terror for one minute when threatened; {41-60} Lust. Cannot focus on any nonsexual activity; {61-75} Sadness. The difficulty of all tasks is increased by one step; {76-85} Complacency. Has no motivation. The difficulty of all tasks is increased by two steps; {86-95} Joy. Easy to interact with in a pleasant manner; the difficulty of all such actions is decreased by one step; {96-00} Love. Much easier to interact with; the difficulty of all such actions is decreased by two steps, but temporary attachment is likely.)
+Poison (Explosive)
+Level: 1d6 + 1; Effect: Once this substance enters the bloodstream, it travels to the brain and reorganizes into an explosive that detonates when activated, inflicting 10 points of damage (ignoring Armour).  [d100] ({01-25} The detonator is activated (must be within long range); {26-40} A specified amount of time passes; {41-50} The victim takes a specific action; {51-55} A specific note is sung or played on an instrument within short range; {56-60} The victim smells a specific scent within immediate range; {61-80} The victim comes within long range of the detonator; {81-00} The victim is no longer within long range of the detonator.)
+Poison (Mind Controlling)
+Level: 1d6 + 2; Effect: The victim must carry out a specific action in response to a specific trigger. [d100] ({01-20} Lies down for one minute with eyes closed when told to do so; {21-40} Flees in terror for one minute when threatened; {41-60} Answers questions truthfully for one minute; {61-75} Attacks close friend for one round when within immediate range; {76-85} Obeys next verbal command given (if it is understood); {86-95} For twenty-four hours, becomes sexually attracted to the next creature of its own species that it sees; {96-00} Moves toward the next red object seen in lieu of all other actions, ignoring self-preservation.)
+Poison (Mind Disrupting)
+Level: 1d6 + 2; Effect: The victim suffers Intellect damage equal to the cypher’s level and cannot take actions for a number of rounds equal to the cypher’s level.
+Psychic Communique
+Level: 1d6 + 2; Effect: Allows the user to project a one-time, one-way telepathic message of up to ten words, with an unlimited range, to anyone they know.
+Radiation Spike
+Level: 1d6 + 4; Effect: Delivers a powerful burst of radiation that disrupts the tissue of any creature touched, inflicting damage equal to the cypher’s level.
+Ray Emitter
+Level: 1d6 + 2; Effect: Allows the user to project a ray of destructive energy up to 200 feet (61 m) that inflicts damage equal to the cypher’s level. [d100] ({01-50} Heat/concentrated light; {51-60} Cell-disrupting radiation; {61-80} Force; {81-87} Magnetic wave; {88-93} Molecular bond disruption; {94-00} Concentrated cold.)
+Ray Emitter (Command)
+Level: 1d6 + 2; Effect: Allows the user to project a ray up to 200 feet (61 m) that forces a target to obey the next verbal command given (if it is understood).
+Ray Emitter (Fear)
+Level: 1d6 + 2; Effect: Allows the user to project a ray up to 200 feet (61 m) that causes the target to flee in terror for one minute.
+Ray Emitter (Friend Slaying)
+Level: 1d6 + 2; Effect: Allows the user to project a ray up to 200 feet (61 m) that causes the target to attack its nearest ally for one round.
+Ray Emitter (Mind Disrupting)
+Level: 1d6 + 2; Effect: Allows the user to project a ray of destructive energy up to 200 feet (61 m) that inflicts Intellect damage equal to the cypher’s level. Also, the victim cannot take actions for a number of rounds equal to the cypher’s level.
+Ray Emitter (Numbing)
+Level: 1d6 + 2; Effect: Allows the user to project a ray of energy up to 200 feet (61 m) that numbs one limb of the target, making it useless for one minute. A small number of these devices (5%) induce numbness that lasts for one hour.
+Ray Emitter (Paralysis)
+Level: 1d6 + 2; Effect: Allows the user to project a ray of energy up to 200 feet (61 m) that paralyzes the target for one minute. A small number of these devices (5%) induce paralysis that lasts for one hour.
+Reality Spike
+Level: 1d6 + 4; Effect: Once activated, the cypher does not move-ever-even if activated in mid-air.  A Might action will dislodge it, but then it is ruined.
+Reflex Enhancer
+Level: 1d6; Effect: The difficulty of any task involving manual dexterity is decreased by two steps for one hour.
+Rejuvenator
+Level: 1d6 + 2; Effect: Restores a number of points equal to the cypher’s level to one random stat Pool. [d100] ({01-50} Might Pool; {51-75} Speed Pool; {76-00} Intellect Pool.)
+Remembering
+Level: 1d6; Effect: Allows the user to recall any one experience they’ve ever had. The experience can be no longer than one minute, but the recall is perfect.
+Remote Viewer
+Level: 1d6; Effect: For one hour, the user can see everything going on in the vicinity of the cypher, regardless of the distance between them.
+Repair Unit
+Level: 1d10; Effect: The cypher becomes a multi-armed sphere that floats. It repairs one designated item (of a level equal to or less than its own) that has been damaged but not destroyed. The repair unit can also create spare parts, unless the GM rules that the parts are too specialized or rare (in which case, the unit repairs the device except for the specialized part).  Repair time is 1d100 + 20 minutes.
+Repeater
+Level: 1d6 + 1; Effect: For the next minute, the user’s ranged weapon fires one additional time with ammo fabricated by the cypher. The weapon wielder can aim the free shot at the same target as the initiating shot, or at a target next to the first one.
+Retaliation
+Level: 1d6; Effect: For the next twenty-four hours, anyone striking the user receives a small burst of electricity that inflicts 1 point of damage (no action or roll required).
+Secret
+Level: 1d6; Effect: The user can ask the GM one question and get a general answer. The GM assigns a level to the question, so the more obscure the answer, the more difficult the task. Generally, knowledge that a PC could find by looking somewhere other than his current location is level 1, and obscure knowledge of the past is level 7. Gaining knowledge of the future is level 10, and such knowledge is always open to interpretation.
+Sheen
+Level: 1d6; Effect: For one week, the user’s cells are coated with a protective veneer that resists damage (+1 to Armour) and decreases the difficulty of Might defence rolls by two steps. However, healing is more difficult during this time; all recovery rolls suffer a –1 penalty
+Shock Attack
+Level: 1d6; Effect: For the next twenty-four hours, each time the user strikes a solid creature or object, the user generates a burst of electricity, inflicting 1 additional point of damage.
+Shocker
+Level: 1d6 + 4; Effect: Delivers a powerful burst of electricity that shocks any creature touched, inflicting damage equal to the cypher’s level.
+Skill Boost
+Level: 1d6; Effect: Dramatically but temporarily alters the user’s mind and body so they can perform one specific physical action with the difficulty decreased by three steps. Once activated, this boost can be used a number of times equal to the cypher’s level, but only within a twenty-four hour period. The boost takes effect each time the action is performed. [d100] ({01-15} Melee attack; {16-30} Ranged attack; {31-40} Speed defence; {41-50} Might defence; {51-60} Intellect defence; {61-68} Jumping; {69-76} Climbing; {77-84} Running; {85-92} Swimming {93-94} Sneaking {95-96} Balancing {97-98} Perceiving {99} Carrying {00} Escaping.)
+Slave Maker
+Level: 1d6 + 2; Effect: To activate the cypher, the user must succeed on a melee attack against a creature about the size of the user and whose level does not exceed the cypher’s level. The cypher bonds to the target, who immediately becomes calm. The target awaits the user’s commands and carries out all orders to the best of its ability. The target remains so enslaved for a number of hours equal to the cypher’s level minus the target’s level.  (If the result is 0, the target remains enslaved for one minute.)
+Sleep Inducer
+Level: 1d6; Effect: Touch puts the victim to sleep for ten minutes or until awoken by a violent action or an extremely loud noise.
+Sniper Module
+Level: 1d6; Effect: For the next hour, the effective range of the user’s ranged weapon increases to 2 miles (3 km).
+Solvent
+Level: 1d10; Effect: Dissolves 1 cubic foot of material each round. After one round per cypher level, the cypher becomes inert.
+ Sonic Hole
+Level: 1d6 + 2; Effect: Draws all sound within long range into the device for one round per cypher level. Within the affected area, no sound can be heard.
+Sound Dampener
+Level: 1d6 + 2; Effect: Dampens all sound within immediate range, providing an asset for all creatures in the area to attempt stealth actions.
+Spatial Warp
+Level: 1d6 + 4; Effect: When affixed to a device that affects a single target at range, that range is increased to 1 mile (2 km) with no penalties. Space is temporarily warped in terms of seeing and reaching the target. If direct line of sight is important to the device’s effect, it remains important.
+Speed Boost
+Level: 1d6 + 2; Effect: Adds 1 to Speed Edge for one hour.
+Spy
+Level: 1d6 + 2; Effect: Produces a tiny spying object that resists detection as a level 8 creature.  The object moves at great speed, mapping and scanning an unknown area. It moves 500 feet (152 m) per level, scanning an area up to 50 feet (15 m) away from it. It identifies basic layout, creatures, and major energy sources. Its movement is blocked by any physical or energy barrier. At the end of its mapping run, it returns to the user and reports. If it discovers a predefined target during its run (such as “a creature of level 5 or higher,” “a locked door,” “a major energy source,” and so on), it detonates instead, dealing electrical and shrapnel damage equal to the cypher’s level to all creatures and objects in short range.
+Stasis Keeper
+Level: 1d6; Effect: Puts a subject into stasis for a number of days equal to the cypher’s level, or until it is violently disturbed. An object in stasis does not age and comes out of the stasis alive and in the same condition as it went in, with no memory of the period of inactivity.
+Stim
+Level: 1d6; Effect: Decreases the difficulty of the next action taken by three steps.
+Strength Boost
+Level: 1d6 + 2; Effect: Adds 1 to Might Edge for one hour.
+Strength Enhancer
+Level: 1d6; Effect: The difficulty of any non-combat task involving raw strength is decreased by two steps for one hour.
+Subdual Field
+Level: 1d6 + 3; Effect: Two rounds after being activated, the device creates an invisible field that fills a specified area (such as a cube of a certain size) within long range. The field lasts for one minute. It affects the minds of thinking beings within the field, preventing them from taking hostile actions. The effect lasts as long as they remain in the field and for 1d6 rounds after, although an Intellect defence roll is allowed each round to act normally (both in the field and after leaving it).
+Telepathy
+Level: 1d6 + 2; Effect: For one hour, the device enables long-range mental communication with anyone the user can see.
+Teleporter (Bounder)
+Level: 1d6 + 2; Effect: User teleports up to 100 × the cypher level in feet to a location they can see. They arrive safely with their possessions but cannot take anything else with them.
+Teleporter (Interstellar)
+Level: 1d6 + 4; Effect: User teleports anywhere in the galaxy to a location they have previously visited or seen. They arrives safely with their possessions but cannot take anything else with them.
+Teleporter (Planetary)
+Level: 1d6 + 4; Effect: User teleports anywhere on the planet to a location they have previously visited or seen. They arrives safely with their possessions but cannot take anything else with them.
+Teleporter (Traveller)
+Level: 1d6 + 4; Effect: User teleports up to 100 × the cypher level in miles to a location they have previously visited or seen. They arrives safely with their possessions but cannot take anything else with them.
+Temporal Viewer
+Level: 1d6 + 4; Effect: Displays moving images and sound, up to ten minutes in length, depicting events that occurred at the current location up to one year prior. The user specifies the time period shown by the viewer.
+Time Dilation (Defensive)
+Level: 1d6; Effect: For the next twenty-four hours, when the user is attacked, they move in rapid, seemingly random jumps, a few inches to one side or the other. This is an asset that modifies attacks by two steps in their favour.
+Time Dilation (Offensive)
+Level: 1d6; Effect: For the next twenty-four hours, when the user makes a melee attack, they move at almost instantaneous speed, modifying their attack by two steps in their favour.
+Tissue Regeneration
+Level: 1d6 + 4; Effect: For the next hour, the user regains 1 point lost to damage per round, up to a total number of points equal to twice the cypher’s level. As each point is regained, they choose which Pool to add it to. If all their Pools are at maximum, the regeneration pauses until they takes more damage, at which point it begins again (if any time remains in the hour) until the duration expires.
+Tracer
+Level: 1d6; Effect: Fires a microscopic tracer that clings to any surface within short range. For the next twenty-four hours, the launcher shows the distance and direction to the tracer, as long as it is in the same dimension.
+Trick Embedder
+Level: 1d6; Effect: A non-intelligent animal immediately and perfectly learns one trick it is capable of physically performing. The trick must be designated when the cypher is activated.
+Uninterruptible Power Source
+Level: 1d6 + 4; Effect: Provides power appropriate to another device for up to a day. The device to be powered can be as simple as a light source or as complex as a small starcraft, assuming the cypher’s level is equal to the item’s power requirements. A desk lamp is a level 1 power requirement, a car engine is a level 5 power requirement, and a starship is a level 10 power requirement.
+Vanisher
+Level: 1d6 + 2; Effect: The user becomes invisible for ten minutes, during which time they are specialized in stealth and Speed defence tasks. This effect ends if they do something to reveal their presence or position. If this occurs, they can regain the remaining invisibility effect by taking an action to focus on hiding their position.
+Visage Changer
+Level: 1d6; Effect: Changes the appearance of one human-sized creature. The change takes ten minutes to apply and lasts for twenty-four hours.
+Visual Displacement Device
+Level: 1d6; Effect: Projects holographic images of the user to confuse attackers. The images appear around the user, giving them an asset to Speed defence actions for ten minutes.
+Vocal Translator
+Level: 1d6; Effect: For twenty-four hours, translates everything said by the user into a language that anyone can understand.
+Warmth
+Level: 1d6; Effect: Keeps the user warm and comfortable, even in the harshest cold temperatures, for twenty-four hours.  During this time, the user has Armour equal to the cypher’s level that protects against cold damage.
+Water Adapter
+Level: 1d6; Effect: The user can breathe underwater and operate at any depth (without facing debilitating consequences of changing pressure) for eight hours.
+Weapon Enhancement
+Level: 1d6 + 2; Effect: Modifies a weapon’s attack for one hour. [d100] ({01-10} Decreases difficulty of attack by one step; {11-20} Deals bonus electrical damage equal to cypher level; {21-30} Deals bonus cold damage equal to cypher level; {31-40} Deals bonus poison damage equal to cypher level; {41-50} Deals bonus acid damage equal to cypher level; {51-60} Deals bonus fire damage equal to cypher level; {61-70} Deals bonus sonic damage equal to cypher level; {71-80} Deals bonus psychic damage equal to cypher level; {81-90} Knockback ({18-20} successful attack roll, target knocked back 30 feet [9 m]); {91-95} Holding ({18-20} successful attack roll, target can’t act on its next turn); {96-97} Decreases difficulty of attack by two steps; {98} Banishing ({18-20} successful attack roll, target is sent to random location at least 100 miles [161 km] away); {99} Explodes, inflicting damage equal to cypher level to all within immediate range; {00} Heart-seeking ({18-20} successful attack roll, target is killed).)
+Wings
+Level: 1d6 + 2; Effect: User can fly at their normal running speed for one hour.
+X-Ray Viewer
+Level: 1d6 + 4; Effect: Allows the user to see through up to 2 feet (60 cm) of material, if the cypher’s level is higher than the material’s level.  The effect lasts for one minute.
+Zero Point Field
+Level: 1d6 + 3; Effect: Renders an inanimate object outside the effects of most energy for one minute. This means the object cannot be harmed, moved, or manipulated in any way. It remains in place (even in mid-air).
+Area Boost
+Level: 1d6 + 1; Effect: If you use an ability that affects a single target, this cypher expands the effect so it includes the immediate area around that target. If the power normally affects an immediate area, the area becomes short. Short areas are increased to long. Abilities with long-distance areas become 500-foot (152 m) areas. All other areas double in radius size.
+Burst Boost
+Level: 1d6 + 2; Effect: If you use an ability that affects a single target at short range or farther, the range drops to immediate, but the ability affects all targets within immediate range.
+Damage Boost
+Level: 1d6 + 2; Effect: If you use an ability that inflicts damage, it inflicts additional damage equal to this cypher’s level.
+Efficacy Boost
+Level: 1d6; Effect: The difficulty of using one of your abilities is reduced by one step.
+Energy Boost
+Level: 1d6; Effect: If you use an ability that has a stat Pool cost, the cost is reduced to 0.
+Major Efficacy Boost
+Level: 1d6 + 1; Effect: The difficulty of using one of your abilities is reduced by a number of steps equal to this cypher’s level.
+Range Boost
+Level: 1d6 + 1; Effect: The range of one of your abilities increases. Something that affects only you can now affect someone you touch. Abilities requiring touch can affect anyone within immediate range. An ability with immediate range becomes one with short range. Short-range powers become long range.  Long-range powers increase to 500 feet (152 m). All other ranges double.
+Target Boost
+Level: 1d6 + 2; Effect: If you use an ability that affects a target at range, you can affect an additional target within the same range.
